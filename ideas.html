@@ -34,20 +34,21 @@
         <div class="nav-collapse collapse">
           <ul class="nav navbar-nav">
            
-            <li ><a href="#">Map</a></li>
-            <li class="active"><a href="#">Ideas</a></li>
-            <li><a href="#">Profiles</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="index.html">Map</a></li>
+            <li class="active"><a href="ideas.html">Ideas</a></li>
+            <li><a href="profiles.html">Profiles</a></li>
+            <li><a href="about.html">About</a></li>
           </ul>
 
           
 
           <ul class="nav navbar-nav pull-right">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cary Betagole <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle signed-in" data-toggle="dropdown">Cary Betagole <b class="caret"></b> <img alt="64x64" src="img/profiles/cary.jpg">
+              </a>
               <ul class="dropdown-menu">
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Activity</a></li>
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">Edit Profile</a></li>
                 <li class="divider"></li>
                 <li><a href="#">Sign Out</a></li>
               </ul>
@@ -66,55 +67,108 @@
     <div class="container">
       
       <div class="row">
-        <button type="button" class="btn btn-primary btn-lg">Submit Your Idea</button>
+        <div class="col-12">
           
 
-      <h2>Ideas Feed</h2>
-          <div class="media">
-            <a class="pull-left" href="#">
-               <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACtUlEQVR4Xu2Y20tqURDGPzMqrBCEBJXqJRPJFAUJvID4n3vJIm9QIAqJPgjii0KY2tXON6B4OKfAbbUfnHmRvXXNWvPN5YfL0u/3p1hjs6gAWgHaAjoD1ngGQoegUkApoBRQCigF1lgBxaBiUDGoGFQMrjEE9M+QYlAxqBhUDCoGFYNrrMDKGGw0Guh2u5hOp3C5XPD5fLBYLHNJ/1AGtVoNNpsN4XD4r+8+0/0nfH6210oC1Ot1dDodbG5uiv/X11ccHx/D6/XKM0XJZDLyfmtrC4lEAhsbG1/W20/4/GpDwwK8vb0hm81KRpPJJF5eXtBut7G/vw+PxyN73t/fyzvazs4O4vE4Hh8fcXt7C6vVikgkguFwCAa9vb2N8/Nz5PP5pX0uVtyy3WxYgOfnZzns+/u7BD2ZTKQFTk9P5Qzj8RiXl5c4OjrCw8MDRqORCMXDlstlDAYDOBwOWcfvWDVcb9TnsoHPfm9YAPZ2pVIRP2wBljmNQZydnaFYLEp2U6kUbm5u8PT0NBdgUTyusdvtiEajWMXnrwvADBcKBSndWCwmWby+vpZeDwaDKJVK2N3dxeHhIZrNplTKycmJPNNarZa8p11cXEgVrerTiAiGK4AZ5wxgb1OA2TMF8Pv9qFar/5yHAzCdToPzI5fLzavm4OAAoVBo7sOITyPBc41hATjhWQHMmtvtlk/2tdPpRCAQAMucxqDZDhSImWZwd3d36PV62Nvbk8phdXAAcq1Rn78uADfkALu6upKM0tgO7GUGuWhsDQpACnAgUpAZPSgEuc85MqPJsj5NocBigBx2NGb0u+wnfP7vbIZb4LsCNduPCqA3QnojpDdCeiNk9iQ2c3+lgFJAKaAUUAqYOYXN3lspoBRQCigFlAJmT2Iz91cKKAWUAkoBpYCZU9jsvZUC606BDwz4jZ+RGtXxAAAAAElFTkSuQmCC" style="width: 64px; height: 64px;">
-
-              <h6>Anonymous</h6>
-            </a>
-            <div class="media-body">
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-
-              <h6>Posted 2 hours ago • <a href="#">Like <strong>(4)</strong></a> • via SMS</h6>
-            </div>
-
-          </div>
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACtUlEQVR4Xu2Y20tqURDGPzMqrBCEBJXqJRPJFAUJvID4n3vJIm9QIAqJPgjii0KY2tXON6B4OKfAbbUfnHmRvXXNWvPN5YfL0u/3p1hjs6gAWgHaAjoD1ngGQoegUkApoBRQCigF1lgBxaBiUDGoGFQMrjEE9M+QYlAxqBhUDCoGFYNrrMDKGGw0Guh2u5hOp3C5XPD5fLBYLHNJ/1AGtVoNNpsN4XD4r+8+0/0nfH6210oC1Ot1dDodbG5uiv/X11ccHx/D6/XKM0XJZDLyfmtrC4lEAhsbG1/W20/4/GpDwwK8vb0hm81KRpPJJF5eXtBut7G/vw+PxyN73t/fyzvazs4O4vE4Hh8fcXt7C6vVikgkguFwCAa9vb2N8/Nz5PP5pX0uVtyy3WxYgOfnZzns+/u7BD2ZTKQFTk9P5Qzj8RiXl5c4OjrCw8MDRqORCMXDlstlDAYDOBwOWcfvWDVcb9TnsoHPfm9YAPZ2pVIRP2wBljmNQZydnaFYLEp2U6kUbm5u8PT0NBdgUTyusdvtiEajWMXnrwvADBcKBSndWCwmWby+vpZeDwaDKJVK2N3dxeHhIZrNplTKycmJPNNarZa8p11cXEgVrerTiAiGK4AZ5wxgb1OA2TMF8Pv9qFar/5yHAzCdToPzI5fLzavm4OAAoVBo7sOITyPBc41hATjhWQHMmtvtlk/2tdPpRCAQAMucxqDZDhSImWZwd3d36PV62Nvbk8phdXAAcq1Rn78uADfkALu6upKM0tgO7GUGuWhsDQpACnAgUpAZPSgEuc85MqPJsj5NocBigBx2NGb0u+wnfP7vbIZb4LsCNduPCqA3QnojpDdCeiNk9iQ2c3+lgFJAKaAUUAqYOYXN3lspoBRQCigFlAJmT2Iz91cKKAWUAkoBpYCZU9jsvZUC606BDwz4jZ+RGtXxAAAAAElFTkSuQmCC" style="width: 64px; height: 64px;">
-
-              <h6>@nancyjane</h6>
-
-            </a>
-            <div class="media-body">
-              
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-
-              <h6>Posted 1 day ago • <a href="#">Like</a> • via Twitter</h6>
-              
-            </div>
-          </div>
-
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACtUlEQVR4Xu2Y20tqURDGPzMqrBCEBJXqJRPJFAUJvID4n3vJIm9QIAqJPgjii0KY2tXON6B4OKfAbbUfnHmRvXXNWvPN5YfL0u/3p1hjs6gAWgHaAjoD1ngGQoegUkApoBRQCigF1lgBxaBiUDGoGFQMrjEE9M+QYlAxqBhUDCoGFYNrrMDKGGw0Guh2u5hOp3C5XPD5fLBYLHNJ/1AGtVoNNpsN4XD4r+8+0/0nfH6210oC1Ot1dDodbG5uiv/X11ccHx/D6/XKM0XJZDLyfmtrC4lEAhsbG1/W20/4/GpDwwK8vb0hm81KRpPJJF5eXtBut7G/vw+PxyN73t/fyzvazs4O4vE4Hh8fcXt7C6vVikgkguFwCAa9vb2N8/Nz5PP5pX0uVtyy3WxYgOfnZzns+/u7BD2ZTKQFTk9P5Qzj8RiXl5c4OjrCw8MDRqORCMXDlstlDAYDOBwOWcfvWDVcb9TnsoHPfm9YAPZ2pVIRP2wBljmNQZydnaFYLEp2U6kUbm5u8PT0NBdgUTyusdvtiEajWMXnrwvADBcKBSndWCwmWby+vpZeDwaDKJVK2N3dxeHhIZrNplTKycmJPNNarZa8p11cXEgVrerTiAiGK4AZ5wxgb1OA2TMF8Pv9qFar/5yHAzCdToPzI5fLzavm4OAAoVBo7sOITyPBc41hATjhWQHMmtvtlk/2tdPpRCAQAMucxqDZDhSImWZwd3d36PV62Nvbk8phdXAAcq1Rn78uADfkALu6upKM0tgO7GUGuWhsDQpACnAgUpAZPSgEuc85MqPJsj5NocBigBx2NGb0u+wnfP7vbIZb4LsCNduPCqA3QnojpDdCeiNk9iQ2c3+lgFJAKaAUUAqYOYXN3lspoBRQCigFlAJmT2Iz91cKKAWUAkoBpYCZU9jsvZUC606BDwz4jZ+RGtXxAAAAAElFTkSuQmCC" style="width: 64px; height: 64px;">
-
-              <h6>Benjamin Rodigas</h6>
-
-            </a>
-            <div class="media-body">
-              
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
-
-              <h6>Posted 4 days ago • <a href="#">Like <strong>(1)</strong></a></h6>
-            </div>
-          </div>
+          <h1>Ideas Feed</h1>
+        </div>
 
         
+
+
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2 col-12">
+
+         
+
+           
+
+        
+          
+
+        </div>
+        <div class="col-lg-6 col-12">
+          
+          
+            
+            
+
+          <div class="panel activity">
+            
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <div class="media">
+                  <a class="pull-left profile-img" href="#">
+                    <img class="media-object"  alt="64x64" src="img/profiles/cary.jpg" style="width: 64px; height: 64px;">
+
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading">Cary Betagole <small>@carybeta</small></h4>
+                    Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    <h6>Posted 1 day ago • on <a href="#">Lot #3456</a> • <a href="#">Like</a></h6>
+                    
+                  </div>
+                </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="media">
+                  <a class="pull-left profile-img" href="#">
+                    <img class="media-object"  alt="64x64" src="img/profiles/ben.jpg" style="width: 64px; height: 64px;">
+
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading">Ben Rodigas <small>via Instagram</small></h4>
+                    Tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+                    <img src="img/vacant_lot.jpg" alt="vacant_lot">
+
+                    <h6>Posted 1 day ago • <a href="#">Like</a></h6>
+                    
+                  </div>
+                </div>
+                </li>
+
+                <li class="list-group-item">
+                  <div class="media">
+                  <a class="pull-left profile-img" href="#">
+                    <img class="media-object"  alt="64x64" src="img/profiles/justin.jpg" style="width: 64px; height: 64px;">
+
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading">Justin Broglie <small>via SMS</small></h4>
+                    Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+                    <h6>Posted 1 day ago • <a href="#">Like</a></h6>
+                    
+                  </div>
+                </div>
+                </li>
+
+                <li class="list-group-item">
+                  <div class="media">
+                  <a class="pull-left profile-img" href="#">
+                    <img class="media-object"  alt="64x64" src="img/profiles/cary.jpg" style="width: 64px; height: 64px;">
+
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading">Cary Betagole <small>@carybeta</small></h4>
+                    Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+                    <h6>Posted 1 day ago • <a href="#">Like</a></h6>
+                    
+                  </div>
+                </div>
+                </li>
+                
+              </ul>
+            
+
+          </div>
+
+
+        </div>
 
 
       </div>
