@@ -11,6 +11,9 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
 
   </head>
 
@@ -27,14 +30,14 @@
         <div class="nav-collapse collapse">
           <ul class="nav navbar-nav">
            
-            <li class="active"><a href="#">Map</a></li>
+            <li class="active"><a href="index.html">Map</a></li>
             <li><a href="ideas.html">Ideas</a></li>
             <li><a href="profiles.html">Profiles</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="about.html">About</a></li>
           </ul>
 
           <ul class="nav navbar-nav pull-right">
-              <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+              <button type="button" data-toggle="modal" href="#myModal" class="btn btn-default navbar-btn">Sign in</button>
           </ul>
 
         </div><!--/.nav-collapse -->
@@ -85,6 +88,7 @@
 
             </div>
 
+               
                 <li class="list-group-item">
                   <div class="media">
                   <a class="pull-left profile-img" href="#">
@@ -92,7 +96,7 @@
 
                   </a>
                   <div class="media-body">
-                    <h4 class="media-heading">Cary Betagole <small>@carybeta</small></h4>
+                    <h4 class="media-heading">Cary Betagole <small>@carybeta <i class="icon-twitter"></i></small></h4>
                     Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                     <h6>Posted 1 day ago • on <a href="#">Lot #3456</a> • <a href="#">Like</a></h6>
                     
@@ -102,14 +106,48 @@
                 <li class="list-group-item">
                   <div class="media">
                   <a class="pull-left profile-img" href="#">
-                    <img class="media-object"  alt="64x64" src="img/profiles/cary.jpg" style="width: 64px; height: 64px;">
+                    <img class="media-object"  alt="64x64" src="img/profiles/ben.jpg" style="width: 64px; height: 64px;">
 
                   </a>
                   <div class="media-body">
-                    <h4 class="media-heading">Cary Betagole <small>@carybeta</small></h4>
-                    Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    <h4 class="media-heading">Ben Rodigas <small>via Instagram <i class="icon-instagram"></i></small></h4>
+                    Tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+                    <div class="thumbnail"><img src="img/vacant_lot.jpg" alt="vacant_lot"></div>
 
                     <h6>Posted 1 day ago • <a href="#">Like</a></h6>
+                    
+                  </div>
+                </div>
+                </li>
+
+                <li class="list-group-item">
+                  <div class="media">
+                  <a class="pull-left profile-img" href="#">
+                    <img class="media-object"  alt="64x64" src="img/profiles/justin.jpg" style="width: 64px; height: 64px;">
+
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading">Justin Broglie <small>via SMS <i class="icon-mobile-alt"></i></small></h4>
+                    Donec lacinia congue felis in faucibus. Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. 
+
+                    <h6>Posted 1 day ago • <a href="#">Like</a></h6>
+                    
+                  </div>
+                </div>
+                </li>
+
+                <li class="list-group-item">
+                  <div class="media">
+                  <a class="pull-left profile-img" href="#">
+                    <img class="media-object"  alt="64x64" src="img/profiles/danielle.jpg" style="width: 64px; height: 64px;">
+
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading">Danielle Heitmann</h4>
+                    Viverra odio, vestibulum in vulputate at, tempus  turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+                    <h6>Posted 1 week ago • <a href="#">Like</a></h6>
                     
                   </div>
                 </div>
@@ -122,32 +160,18 @@
 
                   </a>
                   <div class="media-body">
-                    <h4 class="media-heading">Cary Betagole <small>@carybeta</small></h4>
-                    Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    <h4 class="media-heading">Cary Betagole</h4>
+                    Fringilla viverra odio, vestibulum in vulputate at, tempus  turpis. Fusce condimentum nunc ac nisi vulputate . Donec lacinia congue felis in faucibus.
 
-                    <h6>Posted 1 day ago • <a href="#">Like</a></h6>
-                    
-                  </div>
-                </div>
-                </li>
-
-                <li class="list-group-item">
-                  <div class="media">
-                  <a class="pull-left profile-img" href="#">
-                    <img class="media-object"  alt="64x64" src="img/profiles/cary.jpg" style="width: 64px; height: 64px;">
-
-                  </a>
-                  <div class="media-body">
-                    <h4 class="media-heading">Cary Betagole <small>@carybeta</small></h4>
-                    Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-
-                    <h6>Posted 1 day ago • <a href="#">Like</a></h6>
+                    <h6>Posted 2 months ago • <a href="#">Like</a></h6>
                     
                   </div>
                 </div>
                 </li>
                 
-              </ul>
+              
+                
+
             </div>
 
            

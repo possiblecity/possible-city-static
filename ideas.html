@@ -11,6 +11,9 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
 
     <style>
 
@@ -47,7 +50,7 @@
               <a href="#" class="dropdown-toggle signed-in" data-toggle="dropdown">Cary Betagole <b class="caret"></b> <img alt="64x64" src="img/profiles/cary.jpg">
               </a>
               <ul class="dropdown-menu">
-                <li><a href="#">My Profile</a></li>
+                <li><a href="profile.html">My Profile</a></li>
                 <li><a href="#">Edit Profile</a></li>
                 <li class="divider"></li>
                 <li><a href="#">Sign Out</a></li>
@@ -67,10 +70,11 @@
     <div class="container">
       
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 margin-bottom-20">
           
 
           <h1>Ideas Feed</h1>
+
         </div>
 
         
@@ -79,9 +83,16 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-2 col-12">
+        <div class="col-lg-2 col-sm-4 col-12">
 
-         
+
+        <div class="panel">
+           <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#">All Activity</a></li>
+            <li><a href="#">My Lots</a></li>
+          </ul>
+
+        </div>
 
            
 
@@ -89,7 +100,7 @@
           
 
         </div>
-        <div class="col-lg-6 col-12">
+        <div class="col-lg-5 col-sm-8 col-12">
           
           
             
@@ -105,7 +116,7 @@
 
                   </a>
                   <div class="media-body">
-                    <h4 class="media-heading">Cary Betagole <small>@carybeta</small></h4>
+                    <h4 class="media-heading">Cary Betagole <small>@carybeta <i class="icon-twitter"></i></small></h4>
                     Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                     <h6>Posted 1 day ago • on <a href="#">Lot #3456</a> • <a href="#">Like</a></h6>
                     
@@ -119,10 +130,10 @@
 
                   </a>
                   <div class="media-body">
-                    <h4 class="media-heading">Ben Rodigas <small>via Instagram</small></h4>
+                    <h4 class="media-heading">Ben Rodigas <small>via Instagram <i class="icon-instagram"></i></small></h4>
                     Tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 
-                    <img src="img/vacant_lot.jpg" alt="vacant_lot">
+                    <div class="thumbnail"><img src="img/vacant_lot.jpg" alt="vacant_lot"></div>
 
                     <h6>Posted 1 day ago • <a href="#">Like</a></h6>
                     
@@ -137,10 +148,26 @@
 
                   </a>
                   <div class="media-body">
-                    <h4 class="media-heading">Justin Broglie <small>via SMS</small></h4>
-                    Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    <h4 class="media-heading">Justin Broglie <small>via SMS <i class="icon-mobile-alt"></i></small></h4>
+                    Donec lacinia congue felis in faucibus. Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. 
 
                     <h6>Posted 1 day ago • <a href="#">Like</a></h6>
+                    
+                  </div>
+                </div>
+                </li>
+
+                <li class="list-group-item">
+                  <div class="media">
+                  <a class="pull-left profile-img" href="#">
+                    <img class="media-object"  alt="64x64" src="img/profiles/danielle.jpg" style="width: 64px; height: 64px;">
+
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading">Danielle Heitmann</h4>
+                    Viverra odio, vestibulum in vulputate at, tempus  turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+                    <h6>Posted 1 week ago • <a href="#">Like</a></h6>
                     
                   </div>
                 </div>
@@ -153,10 +180,10 @@
 
                   </a>
                   <div class="media-body">
-                    <h4 class="media-heading">Cary Betagole <small>@carybeta</small></h4>
-                    Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    <h4 class="media-heading">Cary Betagole</h4>
+                    Fringilla viverra odio, vestibulum in vulputate at, tempus  turpis. Fusce condimentum nunc ac nisi vulputate . Donec lacinia congue felis in faucibus.
 
-                    <h6>Posted 1 day ago • <a href="#">Like</a></h6>
+                    <h6>Posted 2 months ago • <a href="#">Like</a></h6>
                     
                   </div>
                 </div>
@@ -165,10 +192,24 @@
               </ul>
             
 
-          </div>
+          </div><!-- .panel -->
 
 
-        </div>
+        </div><!-- .col-lg-5 -->
+
+
+        <div class="col-lg-5 col-sm-8 col-12">
+          
+          
+            
+            
+
+          <div class="panel activity lot-info">
+
+            <p class="lead instructions">Click on an idea to learn about it's lot.</p>
+          </div><!-- .panel -->
+
+        </div><!-- .col-lg-5 -->
 
 
       </div>
