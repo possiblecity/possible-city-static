@@ -1,0 +1,82 @@
+/***************************************************************************/
+/* GENERAL STYLES */
+
+
+body, html {
+	height: 100%;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/***************************************************************************/
+/* SPACING STYLES */
+
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+
+/***************************************************************************/
+/* SIDEBAR STYLES */
+.sidebar {
+	position: fixed;
+	right: 0;
+	top: 50px;
+	/*background-color: #fefefe;*/
+	background-color: rgba(255,255,255,.8);
+	width: 400px;
+	height: 600px;
+	padding: 20px;
+	overflow: scroll;
+}
+
+#sidebar-tabs-content {
+	margin-top: 10px;
+}
+
+#sidebar-tabs-content h6 {
+	color: #666;
+}
+
+
+
+/***************************************************************************/
+/* MAP STYLES */
+.map {
+	margin-top: 49px;
+}
+
+
+
+
+/***************************************************************************/
+/* TEMP STYLES */
+
+.show-grid [class^="col-"] {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #eee;
+	border: 1px solid #ddd;
+	background-color: rgba(86,61,124,.15);
+	border: 1px solid rgba(86,61,124,.2);
+}
+
+.map-idea-profile-width {
+	width:70px;
+}
+
+
+#info .bold p {
+	padding-left: 15px;
+	font-weight: bold;
+}
+
+.nav-tabs {
+font-size: 20px;
+}
+
+.nav-tabs > li > a {
+color: #555555;
+}
