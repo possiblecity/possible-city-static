@@ -80,3 +80,7 @@ font-size: 20px;
 .nav-tabs > li > a {
 color: #555555;
 }
+
+.table {
+margin-top: -10px;
+}
