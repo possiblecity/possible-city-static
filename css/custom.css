@@ -26,14 +26,15 @@ img {
 	top: 50px;
 	bottom: 0;
 	/*background-color: #fefefe;*/
-	background-color: rgba(255,255,255,.8);
+	background-color: rgba(255,255,255,0.85);
 	width: 400px;
-	padding: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
 	overflow: scroll;
 }
 
 #sidebar-tabs-content {
-	margin-top: 10px;
+	margin-top: 0px;
 }
 
 #sidebar-tabs-content h6 {
@@ -48,7 +49,49 @@ img {
 	position: absolute;
 }
 
+.tab-content > .tab-pane {
+padding-top: 15px;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 20px;
+background-color: #FFFFFF;
+}
 
+.nav-tabs {
+font-size: 20px;
+}
+
+.nav-tabs > li {
+	text-align: center;
+	width: 50%;
+
+}
+
+.nav-tabs > li > a {
+	color: #555555;
+	background-color: #dddddd;
+	border-radius: 0px 0px 0 0;
+}
+
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	color: #555555;
+	font-weight: bold;
+	background-color: #FFFFFF;
+} 
+
+.nav-tab-button {
+	margin-top: 10px;
+	border-top:1px solid #DDDDCD;
+}
+
+.nav-tab-button .btn {
+	margin-top: 20px;
+}
+
+.lot-info-table {
+	margin-bottom: -15	px;
+}
 
 
 /***************************************************************************/
@@ -73,14 +116,11 @@ img {
 	font-weight: bold;
 }
 
-.nav-tabs {
-font-size: 20px;
-}
 
-.nav-tabs > li > a {
-color: #555555;
-}
+
+
 
 .table {
+margin-left: 15px;
 margin-top: -10px;
 }
