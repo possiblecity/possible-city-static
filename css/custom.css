@@ -11,6 +11,15 @@ img {
 }
 
 
+
+/***************************************************************************/
+/* TYPOGRAPHY */
+
+h5 {
+	text-transform: uppercase;
+}
+
+
 /***************************************************************************/
 /* SPACING STYLES */
 
@@ -42,11 +51,24 @@ img {
 }
 
 
-
 /***************************************************************************/
-/* MAP STYLES */
-.map {
-	position: absolute;
+/* ACTIVITY FEED */
+
+.activity .list-group-item.active, .activity .list-group-item:hover  { 
+	/*
+	z-index: 2;
+	color: #ffffff;
+	background-color: #428bca;
+	border-color: #428bca;*/
+	background-color: #f5f5f5;
+}
+
+.activity .list-group-item {
+	padding: 15px 30px 10px 15px;
+}
+
+.panel.activity .panel-heading {
+	margin: -15px -15px 0px;
 }
 
 .tab-content > .tab-pane {
@@ -55,6 +77,39 @@ padding-left: 20px;
 padding-right: 20px;
 padding-bottom: 20px;
 background-color: #FFFFFF;
+}
+
+
+
+.panel.activity .list-group {
+	margin: 0px -15px -15px;
+}
+
+.activity .list-group-item:first-child {
+	border-top: none;
+}
+
+
+
+.activity h6 {
+	color: #666;
+}
+
+
+
+/***************************************************************************/
+/* MAP STYLES */
+.map {
+	position: absolute;
+}
+
+.map-idea-profile-width {
+	width:70px;
+}
+
+#info .bold p {
+	padding-left: 15px;
+	font-weight: bold;
 }
 
 .nav-tabs {
@@ -90,8 +145,23 @@ font-size: 20px;
 }
 
 .lot-info-table {
-	margin-bottom: -15	px;
+	margin-bottom: -15px;
 }
+
+
+
+
+
+.table {
+margin-left: 15px;
+margin-top: -10px;
+}
+
+.nav-tabs {
+	font-size: 20px;
+}
+
+
 
 
 /***************************************************************************/
@@ -106,21 +176,3 @@ font-size: 20px;
 	border: 1px solid rgba(86,61,124,.2);
 }
 
-.map-idea-profile-width {
-	width:70px;
-}
-
-
-#info .bold p {
-	padding-left: 15px;
-	font-weight: bold;
-}
-
-
-
-
-
-.table {
-margin-left: 15px;
-margin-top: -10px;
-}
