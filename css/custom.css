@@ -27,10 +27,29 @@ h5 {
 	margin-bottom: 20px;
 }
 
+
+/***************************************************************************/
+/* MAP STYLES */
+.map {
+	position: absolute;
+	z-index: -1000000;
+}
+
+.map-idea-profile-width {
+	width:70px;
+}
+
+#info .bold p {
+	padding-left: 15px;
+	font-weight: bold;
+}
+
+
 /***************************************************************************/
 /* SIDEBAR STYLES */
+
 .sidebar {
-	position: fixed;
+	position: absolute;
 	right: 0;
 	top: 50px;
 	bottom: 0;
@@ -50,9 +69,67 @@ h5 {
 	color: #666;
 }
 
+.sidebar .lot-id-header {
+	margin-bottom: 30px;
+}
+
+.sidebar  .lot-id-header h2 {
+	font-style: italic; 
+}
+
+.sidebar .close-button {
+	padding-right: 10px;
+	display: block;
+	margin-bottom: -30px;
+}
+
+.sidebar .close {
+font-size: 27px;
+color: #838383;
+opacity: 1;
+}
+
+.sidebar .nav-tabs {
+font-size: 20px;
+}
+
+.sidebar .nav-tabs > li {
+	text-align: center;
+	width: 50%;
+
+}
+
+.sidebar .nav-tabs > li > a {
+	color: #555555;
+	background-color: #dddddd;
+	border-radius: 0px 0px 0 0;
+	margin-right: 0px;
+}
+
+
+.sidebar  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	color: #555555;
+	font-weight: bold;
+	background-color: #FFFFFF;
+	border-left: none;
+	border-right: none;
+} 
+
+.sidebar .nav-tab-button {
+	margin-bottom: 20px;
+}
+
+.sidebar  .nav-tab-button {
+	margin-top: 10px;
+}
+
+
+
 
 /***************************************************************************/
 /* ACTIVITY FEED */
+
+
 
 .activity .list-group-item.active, .activity .list-group-item:hover  { 
 	/*
@@ -76,6 +153,7 @@ padding-top: 15px;
 padding-left: 20px;
 padding-right: 20px;
 padding-bottom: 20px;
+margin-bottom: -15px;
 background-color: #FFFFFF;
 }
 
@@ -95,72 +173,19 @@ background-color: #FFFFFF;
 	color: #666;
 }
 
+.activity .lot-info-table {
+	margin-bottom: 20px;
+}
 
 
 /***************************************************************************/
-/* MAP STYLES */
-.map {
-	position: absolute;
-}
+/* LOT INFO */
 
-.map-idea-profile-width {
-	width:70px;
-}
-
-#info .bold p {
-	padding-left: 15px;
-	font-weight: bold;
-}
-
-.nav-tabs {
-font-size: 20px;
-}
-
-.nav-tabs > li {
-	text-align: center;
-	width: 50%;
-
-}
-
-.nav-tabs > li > a {
-	color: #555555;
-	background-color: #dddddd;
-	border-radius: 0px 0px 0 0;
-}
-
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-	color: #555555;
-	font-weight: bold;
-	background-color: #FFFFFF;
-} 
-
-.nav-tab-button {
-	margin-top: 10px;
-	border-top:1px solid #DDDDCD;
-}
-
-.nav-tab-button .btn {
-	margin-top: 20px;
-}
-
-.lot-info-table {
-	margin-bottom: -15px;
-}
-
-
-
-
-
-.table {
+#info .table {
 margin-left: 15px;
 margin-top: -10px;
+border-bottom: 1px solid #dddddd;
 }
-
-.nav-tabs {
-	font-size: 20px;
-}
-
 
 
 
@@ -175,4 +200,6 @@ margin-top: -10px;
 	background-color: rgba(86,61,124,.15);
 	border: 1px solid rgba(86,61,124,.2);
 }
+
+
 
