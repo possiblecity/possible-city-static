@@ -24,10 +24,10 @@ img {
 	position: fixed;
 	right: 0;
 	top: 50px;
+	bottom: 0;
 	/*background-color: #fefefe;*/
 	background-color: rgba(255,255,255,.8);
 	width: 400px;
-	height: 600px;
 	padding: 20px;
 	overflow: scroll;
 }
@@ -45,7 +45,7 @@ img {
 /***************************************************************************/
 /* MAP STYLES */
 .map {
-	margin-top: 49px;
+	position: absolute;
 }
 
 
