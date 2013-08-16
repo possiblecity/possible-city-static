@@ -12,6 +12,17 @@ img {
 
 
 
+
+
+/***************************************************************************/
+/* NAVIGATION */
+
+.navbar {
+	margin-bottom: 0px;
+	border-radius: 0px;
+}
+
+
 /***************************************************************************/
 /* TYPOGRAPHY */
 
@@ -36,6 +47,19 @@ h5 {
 }
 
 
+
+/***************************************************************************/
+/* FEATURED IDEAS */
+
+.featured-ideas {
+	padding-left: 15px;
+	padding-right: 15px;
+
+}
+
+.view-all-ideas {
+	text-align:center; 
+}
 
 /***************************************************************************/
 /* ABOUT */
@@ -81,6 +105,7 @@ h5 {
 
 
 
+
 /***************************************************************************/
 /* SPACING STYLES */
 
@@ -91,14 +116,13 @@ h5 {
 
 /***************************************************************************/
 /* MAP STYLES */
-.map {
-	position: absolute;
-	z-index: -1000000;
-}
+
 
 .map-idea-profile-width {
 	width:70px;
 }
+
+
 
 #info .bold p {
 	padding-left: 15px;
@@ -110,16 +134,8 @@ h5 {
 /* SIDEBAR STYLES */
 
 .sidebar {
-	position: absolute;
-	right: 0;
-	top: 50px;
-	bottom: 0;
 	/*background-color: #fefefe;*/
 	background-color: rgba(255,255,255,0.85);
-	width: 400px;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	overflow: scroll;
 }
 
 #sidebar-tabs-content {
@@ -186,6 +202,18 @@ font-size: 20px;
 
 
 
+#ideas-lot-info-sidebar {
+	position: absolute;
+		right: 0;
+		top: 50px;
+		bottom: 0;
+		width: 400px;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		overflow: scroll;
+}
+
+
 
 /***************************************************************************/
 /* ACTIVITY FEED */
@@ -218,7 +246,9 @@ margin-bottom: -15px;
 background-color: #FFFFFF;
 }
 
-
+.activity .form-control {
+	margin-bottom: 10px;
+}
 
 .panel.activity .list-group {
 	margin: 0px -15px -15px;
@@ -241,15 +271,102 @@ background-color: #FFFFFF;
 	margin-bottom: 20px;
 }
 
+.facebook-btn {
+background-color: #FFFFFF;
+border: 1px solid #dddddd;
+color:#111111;
+height: 42px;
+margin-right: 10px;
+position: relative;
+}
+
+.facebook-logo {
+	margin-top: -4px;
+	margin-left: -10px;
+	margin-right: 10px;
+}
+
+.twitter-btn {
+background-color: #ffffff;
+border: 1px solid #dddddd;
+color:#111111;
+height: 42px;
+margin-right: 10px;
+position: relative;
+}
+
+.facebook-logo {
+	margin-top: -4px;
+	margin-left: -10px;
+	margin-right: 10px;
+}
+
+
+.facebook-twitter-signup-btns {
+	margin-bottom: 15px;
+}
+
+.email-btn {
+	margin-bottom: 20px;
+}
+
+.modal-footer {
+	text-align: left;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 0px;
+}
+
+.modal-footer p {
+	margin-bottom: 0px;
+}
 
 /***************************************************************************/
-/* LOT INFO */
+/* LOT INFO IN SIDEBAR */
 
 #info .table {
 margin-left: 15px;
 margin-top: -10px;
 border-bottom: 1px solid #dddddd;
 }
+
+
+/***************************************************************************/
+/* MODAL  */
+
+
+.modal-dialog {
+width: 475px;
+}
+
+.modal-header {
+border-bottom: 1px solid #F3F2F2;
+}
+
+.modal-footer {
+border-top: 1px solid #F3F2F2
+}
+
+.modal .form-control {
+width: 80%;
+}
+
+.sign-up-modal .modal-body {
+text-align: center;
+}
+
+.sign-up-buttons {
+margin-bottom: 15px;
+}
+
+.modal-body {
+padding-bottom: 0px;
+}
+
+
+
+
+
 
 
 
@@ -259,13 +376,66 @@ border-bottom: 1px solid #dddddd;
 /***************************************************************************/
 /******************************************************* RESPONSIVE STYLES */
 
+@media (min-width: 769px) {
+
+	
+	/***************************************************************************/
+	/* MAP STYLES */
+	.map {
+		position: absolute;
+		z-index: -1000000;
+	}
+
+
+	/***************************************************************************/
+	/* SIDEBAR STYLES */
+
+	.sidebar {
+		position: absolute;
+		right: 0;
+		top: 50px;
+		bottom: 0;
+		width: 400px;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		overflow: scroll;
+	}	
+
+}
+
+
+
+
 
 @media (max-width: 768px) {
+
+
+	/***************************************************************************/
+	/* MAP STYLES */
+	.map {
+		width: 100%;
+		height: 300px;
+	}
+
+	.map-idea-profile-width {
+		width:70px;
+	}
 
 	/***************************************************************************/
 	/* SIDEBAR STYLES */
 	.sidebar {
 		width: 100%;
+	}
+
+	.ideas-lot-info-sidebar {
+		position: absolute;
+		right: 0;
+		top: 50px;
+		bottom: 0;
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		overflow: scroll;	
 	}
 
 	/***************************************************************************/
@@ -274,6 +444,11 @@ border-bottom: 1px solid #dddddd;
 	.profile h3 {
 		margin-top: 0;
 	}
+
+	
+
+
+
   
 }
 
