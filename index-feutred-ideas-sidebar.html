@@ -37,51 +37,38 @@
           </ul>
 
           <ul class="nav navbar-nav pull-right">
-              <li><a href="#">Sign In</a></li>
-              <li><button type="button" data-toggle="modal" href="#sign-up-modal" class="btn btn-default navbar-btn">Sign Up</button></li>
-
-
+              <button type="button" data-toggle="modal" href="#myModal" class="btn btn-default navbar-btn">Sign in</button>
           </ul>
-
-
 
         </div><!--/.nav-collapse -->
       </div>
     </div>
 
-    
+
 
     <div>
-     <iframe class="map" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-75.2324652671814%2C39.94782877507232%2C-75.21201610565186%2C39.95871786306636&amp;layer=mapnik" style="border: 1px solid black"></iframe>
+     <iframe class="map" width="100%" height="93%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-75.2324652671814%2C39.94782877507232%2C-75.21201610565186%2C39.95871786306636&amp;layer=mapnik" style="border: 0px solid black"></iframe>
     </div> 
 
 
-    <div class="sidebar ideas-lot-info-sidebar">
 
-    <div class="close-button pull-right">
-    <button type="button" class="close ">&times;</button>
-    </div>
+
+    <div class="sidebar">
 
     <div class="clearfix">
     </div>
 
     <div class="lot-id-header text-center">
-      <h1>Lot #2345</h1>
-      <h2>2827 Opal Street</h2>
+      <h1>Ideas Near You</h1>
     </div>
     
 
-    <ul id="sidebar-tabs" class="nav nav-tabs">
-      <li class="active"><a href="#ideas" data-toggle="tab">Ideas</a></li>
-      <li class=""><a href="#info" data-toggle="tab">Info</a></li>
-    </ul>
     
-    <div id="sidebar-tabs-content" class="tab-content">
-      <div class="tab-pane fade active in" id="ideas">
+
       
     
 
-          <div class="activity">
+          <div class="featured-ideas">
           <ul class="list-group">
                 
             <div class="nav-tab-button text-center">
@@ -94,22 +81,6 @@
             </div>
 
                
-                <li class="list-group-item">
-                  <div class="media">
-                  <a class="pull-left profile-img" href="#">
-                    <img class="media-object"  alt="64x64" src="img/profiles/profile.png" style="width: 64px; height: 64px;">
-
-                  </a>
-                  <div class="media-body">
-                    <textarea class="form-control" placeholder="Add your idea for this lot" rows="2" ></textarea>
-
-                    <a data-toggle="modal" href="#sign-up-modal-add-idea" class="btn btn-primary btn pull-right">Add idea</a>
-      
-                    
-                  </div>
-                </div>
-                </li> 
-
 
                 <li class="list-group-item">
                   <div class="media">
@@ -185,14 +156,22 @@
 
                   </a>
                   <div class="media-body">
-                    <h4 class="media-heading">Cary Betagole</h4>
-                    Fringilla viverra odio, vestibulum in vulputate at, tempus  turpis. Fusce condimentum nunc ac nisi vulputate . Donec lacinia congue felis in faucibus.
-
-                    <h6>Posted 2 months ago • <a href="#">Like</a></h6>
+                    <h4 class="media-heading">Cary Betagole <small>@carybeta <i class="icon-twitter"></i></small></h4>
+                    Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    <h6>Posted 1 day ago • on <a href="#">Lot #3456</a> • <a href="#">Like</a></h6>
                     
                   </div>
                 </div>
                 </li>
+
+                <br/>
+
+                <div class="view-all-ideas">
+
+                <a href="ideas.html" class="btn btn-primary btn">View all ideas</a>
+
+              </div>
+            </div>
                 
               
                 
@@ -271,139 +250,52 @@
 
     </div>
 
-    </div>
-
-    <div class="clearfix">
-    </div>
 
 
 
 
+    <div class="container">
+      
+
+
+
+    </div><!-- /.container -->
 
 
 
 
 
 
-    <footer class="footer homepage-footer">
-      <p>&copy; Possible City 2013. Site Design by <a href="www.blissbit.org">Blissbit</a></p>
-    </footer>
-                  
 
 
 
-
-              <div class="modal fade" id="sign-up-modal">
+    <div class="modal fade" id="myModal">
                 <div class="modal-dialog">
                   <div class="modal-content">
-                    
-                    <div class="modal-header text-center">
+                    <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                      
-                      <div class="clear-fix">
-                      </div>
-
-                      <h2>Sign up</h2>
-                    </div><!-- /.modal-header -->
+                      <h4 class="modal-title">Sign up to add your idea</h4>
+                    </div>
                     
-                    <div class="modal-body text-center">
-                      
-                      <div>
-                      <button type="button" class="btn btn-default sign-up-buttons facebook-btn"><img class="facebook-logo" src="img/profiles/facebook-logo.png" height="37" width="37">Sign up with Facebook</button>
-                      </div>
-
-                      <div>
-                      <button type="button" class="btn btn-default sign-up-buttons twitter-btn"><img class="facebook-logo" src="img/profiles/twitter-logo.png" height="37" width="37">Sign up with Twitter</button>
-                      </div>
-
-                      <div>
-                      <button type="button" data-toggle="modal" href="#sign-up-with-email-modal" class="btn btn-default sign-up-buttons twitter-btn"><img class="facebook-logo" src="img/profiles/email-icon.png" height="37" width="37">Sign up with Email</button>
-                      </div>
-
-                    </div>
-
-                    <div class="modal-footer">
-
-                      <p class="text-center">Already have an account? <a href="#">Sign in</a></p>
-
-                    </div>
-              
-                  </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-              </div><!-- /.modal -->
-
-
-
-
-
-
-              <div class="modal fade" id="sign-up-modal-add-idea">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    
-                    <div class="modal-header text-center">
-                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                      
-                      <div class="clear-fix">
-                      </div>
-
-                      <h2>Sign up to add your idea</h2>
-                    </div><!-- /.modal-header -->
-                    
-                    <div class="modal-body text-center">
-                      
-                      <div>
-                      <button type="button" class="btn btn-default sign-up-buttons facebook-btn"><img class="facebook-logo" src="img/profiles/facebook-logo.png" height="37" width="37">Sign up with Facebook</button>
-                      </div>
-
-                      <div>
-                      <button type="button" class="btn btn-default sign-up-buttons twitter-btn"><img class="facebook-logo" src="img/profiles/twitter-logo.png" height="37" width="37">Sign up with Twitter</button>
-                      </div>
-
-                      <div>
-                      <button type="button" data-toggle="modal" href="#sign-up-with-email-modal" class="btn btn-default sign-up-buttons twitter-btn"><img class="facebook-logo" src="img/profiles/email-icon.png" height="37" width="37">Sign up with Email</button>
-                      </div>
-
-                    </div>
-
-                    <div class="modal-footer">
-
-                      <p class="text-center">Already have an account? <a href="#">Sign in</a></p>
-
-                    </div>
-              
-                  </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-              </div><!-- /.modal -->
-
-
-
-
-
-
-              <div class="modal fade" id="sign-up-with-email-modal">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    </div>
-    
                     <div class="modal-body">
                       
-                    <form role="form">
-                      <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                      <div class="facebook-twitter-signup-btns">
+
+                      <button type="button" class="btn btn-default facebook-btn"><img class="facebook-logo" src="img/profiles/facebook-logo.png" height="37" width="37">Sign up with Facebook</button>
+
+                      <button type="button" class="btn btn-default twitter-btn"><img class="facebook-logo" src="img/profiles/twitter-logo.png" height="37" width="37">Sign up with Twitter</button>
+
+                    </div>
+
+                      <div>
+                        <button type="button" class="btn btn-default email-btn"><img class="facebook-logo" src="" height="37" width="37">Sign up with Email</button>
+
+                        <div class="modal-footer">
+
+                        <p>Already have an account? <a href="#">Sign in</a></p>
+
                       </div>
-                      <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                      </div>
 
-                       <button type="button" class="btn btn-primary btn">Sign up</button>
-                     </form> 
-
-
-                      
 
 
                     </div>
@@ -411,12 +303,6 @@
                   </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->
               </div><!-- /.modal -->
-
-
-
-
-
-
 
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->

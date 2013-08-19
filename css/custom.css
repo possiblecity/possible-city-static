@@ -3,7 +3,8 @@
 
 
 body, html {
-	height: 100%;
+	min-height: 100%;
+
 }
 
 img {
@@ -28,89 +29,6 @@ img {
 
 h5 {
 	text-transform: uppercase;
-}
-
-
-
-
-
-.navbar-nav > li > a.dropdown-toggle.signed-in {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	line-height: 30px;
-}
-
-.navbar-nav > li > a.dropdown-toggle.signed-in img {
-	width: 30px;
-	height: 30px;
-	margin-left: 5px;
-}
-
-
-
-/***************************************************************************/
-/* FEATURED IDEAS */
-
-.featured-ideas {
-	padding-left: 15px;
-	padding-right: 15px;
-
-}
-
-.view-all-ideas {
-	text-align:center; 
-}
-
-/***************************************************************************/
-/* ABOUT */
-
-.stats p.lead {
-  margin-bottom: 0;
-  text-align: center;
-  font-size: 21px;
-}
-
-.stats h5 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.stats {
-  padding: 20px;
-  background: white;
-  text-align: center;
-}
-
-
-/***************************************************************************/
-/* PROFILES */
-
-
-
-
-/***************************************************************************/
-/* IDEAS */
-
-.panel.lot-info {
-	background-color: #f6f6f6;
-	text-align: center;
-}
-
-.panel.lot-info .instructions {
-	margin: 90px 0;
-	padding: 0;
-}
-
-
-
-
-
-
-/***************************************************************************/
-/* SPACING STYLES */
-
-.margin-bottom-20 {
-	margin-bottom: 20px;
 }
 
 
@@ -242,7 +160,7 @@ padding-top: 15px;
 padding-left: 20px;
 padding-right: 20px;
 padding-bottom: 20px;
-margin-bottom: -15px;
+margin-bottom: -20px;
 background-color: #FFFFFF;
 }
 
@@ -321,6 +239,7 @@ position: relative;
 	margin-bottom: 0px;
 }
 
+
 /***************************************************************************/
 /* LOT INFO IN SIDEBAR */
 
@@ -329,6 +248,90 @@ margin-left: 15px;
 margin-top: -10px;
 border-bottom: 1px solid #dddddd;
 }
+
+
+
+
+.navbar-nav > li > a.dropdown-toggle.signed-in {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 30px;
+}
+
+.navbar-nav > li > a.dropdown-toggle.signed-in img {
+	width: 30px;
+	height: 30px;
+	margin-left: 5px;
+}
+
+
+
+/***************************************************************************/
+/* FEATURED IDEAS */
+
+.featured-ideas {
+	padding-left: 15px;
+	padding-right: 15px;
+
+}
+
+.view-all-ideas {
+	text-align:center; 
+}
+
+/***************************************************************************/
+/* ABOUT */
+
+.stats p.lead {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 21px;
+}
+
+.stats h5 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.stats {
+  padding: 20px;
+  background: white;
+  text-align: center;
+}
+
+
+/***************************************************************************/
+/* PROFILES */
+
+
+
+
+/***************************************************************************/
+/* IDEAS */
+
+.panel.lot-info {
+	background-color: #f6f6f6;
+	text-align: center;
+}
+
+.panel.lot-info .instructions {
+	margin: 90px 0;
+	padding: 0;
+}
+
+
+
+
+
+
+/***************************************************************************/
+/* SPACING STYLES */
+
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+
+
 
 
 /***************************************************************************/
@@ -366,6 +369,39 @@ padding-bottom: 0px;
 
 
 
+/***************************************************************************/
+/* FOOTER  */
+
+.footer {
+	background-color: black;
+	height: 20px;
+	padding-left: 15px;
+	color: #999999;
+}
+
+.footer p {
+	font-size: 12px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -382,8 +418,11 @@ padding-bottom: 0px;
 	/***************************************************************************/
 	/* MAP STYLES */
 	.map {
-		position: absolute;
-		z-index: -1000000;
+		min-height: 93%; /* min. height for modern browser */
+	    height:auto !important; /* important rule for modern Browser */
+	    height:93%; /* min. height for IE */
+	    overflow: hidden !important; /* FF scroll-bar */
+	    float: left;
 	}
 
 
@@ -393,13 +432,124 @@ padding-bottom: 0px;
 	.sidebar {
 		position: absolute;
 		right: 0;
-		top: 50px;
+		top: 51px;
 		bottom: 0;
 		width: 400px;
 		padding-top: 10px;
 		padding-bottom: 20px;
 		overflow: scroll;
-	}	
+	}
+
+	.ideas-page-sidebar	{
+		position: fixed;
+		top: 142px;
+		right: 190px;
+		border: 1px solid #dddddd;
+		border-radius: 4px;
+		padding-top: 0px;
+
+
+	}
+
+	.ideas-page-sidebar	h1, h2 {
+		display: inline;
+		font-size: 18px;
+		margin-top: 30px;
+	}
+
+	.ideas-page-sidebar .lot-id-header {
+		margin-bottom: 0px;
+
+	}
+
+
+	.ideas-page-sidebar .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	background-color: #dddddd;
+	}
+
+
+
+	.ideas-page-sidebar	 .nav-tabs > li > a {
+	border: none;
+	}
+
+	.active-list-group-item {
+		background-color: #dddddd;	
+	}
+
+	.ideas-page-sidebar .activity .list-group-item.active, .activity .list-group-item:hover {
+		background-color: #ffffff;
+	}
+
+	.ideas-page-sidebar .nav-tabs > li > a {
+		background-color: #ffffff;
+	}
+
+	.ideas-page-sidebar .tab-content > .tab-pane {
+		background-color: #dddddd;
+	}
+
+	.ideas-page-panel {
+		padding: 15px;
+		padding-top: 0px;
+	}
+
+	.ideas-page-sidebar .list-group-item {
+		background-color: #dddddd;
+	}
+
+	.ideas-page-sidebar .nav-tabs {
+		font-size: 18px;	
+	}
+
+	.triangle-isosceles {
+		position:relative;
+		margin:1em 0 3em;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		
+	}
+
+
+	.triangle-isosceles.right {
+		margin-right:0px;
+	}
+
+	.triangle-isosceles:after {
+		content:"";
+		position:absolute;
+		bottom:-15px; /* value = - border-top-width - border-bottom-width */
+		left:50px; /* controls horizontal position */
+		border-width:15px 15px 0; /* vary these values to change the angle of the vertex */
+		border-style:solid;
+		border-color:#dddddd transparent;
+	    /* reduce the damage in FF3.0 */
+	    display:block; 
+	    width:0;
+	}
+
+	.triangle-isosceles.right:after {
+		top:16px; /* controls vertical position */
+		right:-35px; /* value = - border-left-width - border-right-width */
+		bottom:auto;
+	    left:auto;
+		border-width:10px 0 10px 50px;
+		border-color:transparent #dddddd;
+	}
+
+
+	/***************************************************************************/
+	/* FOOTER */
+
+	.homepage-footer {
+		position: fixed;
+		bottom: 0;
+		z-index: 10000000;
+		width: 100%;
+	}
+
+
+
 
 }
 
@@ -416,6 +566,7 @@ padding-bottom: 0px;
 		width: 100%;
 		height: 300px;
 	}
+
 
 	.map-idea-profile-width {
 		width:70px;
@@ -445,8 +596,10 @@ padding-bottom: 0px;
 		margin-top: 0;
 	}
 
-	
 
+
+
+}
 
 
   
