@@ -41,7 +41,7 @@ h5 {
 	margin-bottom: 5px;
 }
 
-.activity h4 {
+.no-activity h4 {
 	font-style: italic;
 	padding-top: 15px;
 	color: #6F6F6F;
@@ -413,8 +413,22 @@ border-bottom: 1px solid #dddddd;
 }
 
 
-.edit-profile-btn-sm-margin-left-15px {
+.edit-profile-button-sm-devices  {
 	margin-left:15px; 
+	margin-bottom: 25px;
+}
+
+.skills-lg-xs-2nd-row {
+	margin-top: 0px;
+}
+
+
+.skills-lg-xs-2nd-row h5 {
+	display: none;
+}
+
+.form-group {
+	max-width: 500px;
 }
 
 
@@ -720,7 +734,12 @@ padding-bottom: 0px;
 	}
 
 	.edit-profile-button-lg-devices {
+		margin-top: 10px;
 		margin-bottom: 20px;
+	}
+
+	.skills {
+		margin-bottom: 15p
 	}
 
 
@@ -866,9 +885,7 @@ padding-bottom: 0px;
 	}
 
 
-	.skills-list-margin {
-		margin-bottom: -15px;
-	}
+
 
 	.profile-edit-save-button-sm-devices {
 		margin-bottom: 15px;
