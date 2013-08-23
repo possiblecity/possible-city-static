@@ -3,7 +3,7 @@
 
 
 body, html {
-	min-height: 100%;
+	height: 100%;
 
 }
 
@@ -11,17 +11,14 @@ img {
 	max-width: 100%;
 }
 
-
-
-
-
-/***************************************************************************/
-/* NAVIGATION */
-
-.navbar {
-	margin-bottom: 0px;
-	border-radius: 0px;
+.idea-sidebar-has-needs-wants {
+	padding: 15px;
 }
+
+.profile-pic {
+	border: 1px solid #dddddd;
+}
+
 
 
 /***************************************************************************/
@@ -30,6 +27,57 @@ img {
 h5 {
 	text-transform: uppercase;
 }
+
+.form-group label, .skills p {
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 0px;
+	margin-bottom: 8px;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+.form-group {
+	margin-bottom: 5px;
+}
+
+.activity h4 {
+	font-style: italic;
+	padding-top: 15px;
+	color: #6F6F6F;
+}
+
+
+
+
+/***************************************************************************/
+/* SPACING STYLES */
+
+
+.margin-bottom-10 {
+	margin-bottom: 10px;
+}
+
+.margin-bottom-15 {
+	margin-bottom: 15px;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+
+
+
+
+/***************************************************************************/
+/* NAVIGATION */
+
+.navbar {
+	margin-bottom: 20px;
+	border-radius: 0px;
+}
+
+
 
 
 /***************************************************************************/
@@ -50,6 +98,18 @@ h5 {
 
 /***************************************************************************/
 /* SIDEBAR STYLES */
+
+
+.ideas-lot-info-sidebar .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+border-top: 1px solid #dddddd;
+}
+
+
+.ideas-lot-info-sidebar .nav-tabs {
+border-bottom: none;
+}
+
+
 
 .sidebar {
 	/*background-color: #fefefe;*/
@@ -110,6 +170,11 @@ font-size: 20px;
 	border-right: none;
 } 
 
+.ideas-page-sidebar .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+background-color: #F3F3F3;
+border-top: none;
+}
+
 .sidebar .nav-tab-button {
 	margin-bottom: 20px;
 }
@@ -138,7 +203,7 @@ font-size: 20px;
 
 
 
-.activity .list-group-item.active, .activity .list-group-item:hover  { 
+.activity .list-group-item.active  { 
 	/*
 	z-index: 2;
 	color: #ffffff;
@@ -240,6 +305,13 @@ position: relative;
 }
 
 
+.media .thumbnail {
+	margin-top: 5px;
+}
+
+
+
+
 /***************************************************************************/
 /* LOT INFO IN SIDEBAR */
 
@@ -305,6 +377,47 @@ border-bottom: 1px solid #dddddd;
 
 
 
+/***************************************************************************/
+/* EDIT PROFILE */
+
+.form {
+	text-transform: capitalize; 
+}
+
+.edit-profile-pic {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100%;	
+}
+
+.edit-profile-pic a {
+	color: #ffffff;
+	padding-left: 5px;
+	font-size: 15px;
+}
+
+.profile-edit .profile-pic {
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.edit-profile-pic-a {
+	position: absolute;
+	margin-bottom: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #000000;
+	opacity: 0.8;
+	width: 100%;
+}
+
+
+.edit-profile-btn-sm-margin-left-15px {
+	margin-left:15px; 
+}
+
+
 
 /***************************************************************************/
 /* IDEAS */
@@ -324,12 +437,6 @@ border-bottom: 1px solid #dddddd;
 
 
 
-/***************************************************************************/
-/* SPACING STYLES */
-
-.margin-bottom-20 {
-	margin-bottom: 20px;
-}
 
 
 
@@ -374,35 +481,15 @@ padding-bottom: 0px;
 
 .footer {
 	background-color: black;
-	height: 20px;
-	padding-left: 15px;
 	color: #999999;
 }
 
 .footer p {
 	font-size: 12px;
+	padding-left: 20px;
 	padding-top: 3px;
 	padding-bottom: 3px;
-	margin-bottom: 0px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -410,23 +497,6 @@ padding-bottom: 0px;
 
 
 /***************************************************************************/
-/******************************************************* RESPONSIVE STYLES */
-
-@media (min-width: 769px) {
-
-	
-	/***************************************************************************/
-	/* MAP STYLES */
-	.map {
-		min-height: 93%; /* min. height for modern browser */
-	    height:auto !important; /* important rule for modern Browser */
-	    height:93%; /* min. height for IE */
-	    overflow: hidden !important; /* FF scroll-bar */
-	    float: left;
-	}
-
-
-	/***************************************************************************/
 	/* SIDEBAR STYLES */
 
 	.sidebar {
@@ -441,17 +511,15 @@ padding-bottom: 0px;
 	}
 
 	.ideas-page-sidebar	{
-		position: fixed;
-		top: 142px;
-		right: 190px;
+		position: static;
+		width: 100%;
 		border: 1px solid #dddddd;
 		border-radius: 4px;
 		padding-top: 0px;
-
-
+		overflow: visible;
 	}
 
-	.ideas-page-sidebar	h1, h2 {
+	.ideas-page-sidebar	h1, .ideas-page-sidebar h2 {
 		display: inline;
 		font-size: 18px;
 		margin-top: 30px;
@@ -463,21 +531,19 @@ padding-bottom: 0px;
 	}
 
 
-	.ideas-page-sidebar .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-	background-color: #dddddd;
-	}
 
 
 
 	.ideas-page-sidebar	 .nav-tabs > li > a {
 	border: none;
+	border-top: 1px solid #dddddd;
 	}
 
 	.active-list-group-item {
-		background-color: #dddddd;	
+		background-color: #F3F3F3	;	
 	}
 
-	.ideas-page-sidebar .activity .list-group-item.active, .activity .list-group-item:hover {
+	.ideas-page-sidebar .activity .list-group-item.active {
 		background-color: #ffffff;
 	}
 
@@ -486,7 +552,7 @@ padding-bottom: 0px;
 	}
 
 	.ideas-page-sidebar .tab-content > .tab-pane {
-		background-color: #dddddd;
+		background-color: #F3F3F3;
 	}
 
 	.ideas-page-panel {
@@ -495,11 +561,24 @@ padding-bottom: 0px;
 	}
 
 	.ideas-page-sidebar .list-group-item {
-		background-color: #dddddd;
+		background-color: #F7F7F7;
 	}
 
 	.ideas-page-sidebar .nav-tabs {
-		font-size: 18px;	
+		font-size: 16px;	
+	}
+
+	.ideas-page-sidebar-heading {
+		text-align: center;
+		margin-bottom: 20px;	
+		margin-top: 20px;
+	}
+
+
+
+
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
+		border: none;
 	}
 
 	.triangle-isosceles {
@@ -529,13 +608,65 @@ padding-bottom: 0px;
 	}
 
 	.triangle-isosceles.right:after {
-		top:16px; /* controls vertical position */
-		right:-35px; /* value = - border-left-width - border-right-width */
-		bottom:auto;
-	    left:auto;
-		border-width:10px 0 10px 50px;
-		border-color:transparent #dddddd;
+		top: 16px;
+		right: -22px;
+		bottom: auto;
+		left: auto;
+		border-width: 20px 0 20px 30px;
+		border-color: transparent #F3F3F3;
 	}
+	
+
+
+.ideas-page-neighborhoods-panel-md-devices .panel {
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+
+
+
+.ideas-page-neighborhoods-panel-md-devices {
+	margin-bottom: 0px;
+}
+
+.ideas-page-neighborhoods-panel-md-devices .panel {
+	padding-top: 24px;
+
+}
+
+
+
+
+
+
+
+
+/***************************************************************************/
+/******************************************************* RESPONSIVE STYLES */
+
+@media (min-width: 769px) {
+
+
+	.profile-edit-save-button-2 {
+		display: none;
+	}	
+	
+	/***************************************************************************/
+	/* MAP STYLES */
+	.map {
+		margin-top: -20px;
+		min-height: 93%; /* min. height for modern browser */
+	    height:auto !important; /* important rule for modern Browser */
+	    height:93%; /* min. height for IE */
+	    overflow: hidden !important; /* FF scroll-bar */
+	    float: left;
+	}
+
+
+
 
 
 	/***************************************************************************/
@@ -546,9 +677,137 @@ padding-bottom: 0px;
 		bottom: 0;
 		z-index: 10000000;
 		width: 100%;
+		height: 20px;
 	}
 
 
+
+
+}
+
+
+@media (min-width: 1200px) {
+
+	.hidden-lg-devices {
+		display: none;
+	}
+
+	.hidden-lg-devices hr {
+		margin-bottom: 20px;
+	}
+
+}
+
+
+
+@media (min-width: 992px) {
+
+	
+	.ideas-page-neighborhoods-panel-md-devices {
+		display: none;
+	}
+
+
+	/***************************************************************************/
+	/* EDIT PROFILE */
+
+	.edit-profile-sm-devices {
+		display: none;
+	}
+
+	.edit-profile-form form {
+	margin-bottom: 10px;
+	}
+
+	.edit-profile-button-lg-devices {
+		margin-bottom: 20px;
+	}
+
+
+}
+
+
+@media (max-width: 992px) {
+
+	/***************************************************************************/
+	/* EDIT PROFILE */
+
+	.edit-profile-lg-devices {
+		display: none;
+	}
+
+}
+
+
+
+@media (max-width: 992px) {
+
+	/***************************************************************************/
+	/* EDIT PROFILE */
+
+	.profile-edit-save-button-lg-devices {
+	display: none;
+	}
+
+	.save-button-sm-devices {
+		margin-bottom: 15px;
+	}
+
+	.form-group {
+		margin-bottom: 14px;
+	}
+
+	.checkbox {
+		display: block;
+		min-height: 25px;
+	}		
+
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+	
+	.ideas-page-neighborhoods-panel-xs-lg-devices {
+		display: none;
+	}
+
+
+	.visible-xs {
+		display: none;
+	}
+
+	/***************************************************************************/
+	/* EDIT PROFILE */
+
+	.edit-profile-skills-2nd-column {
+		margin-top: 25px;
+	}
+
+	.skills-2nd-row {
+	color: transparent;
+	}
+
+
+
+}
+
+
+
+@media (min-width: 768px) {
+
+	.visible-xs {
+		display: none;
+	}
+
+	/***************************************************************************/
+	/* EDIT PROFILE */
+
+	.edit-profile-about-section {
+		margin-bottom: 15px;
+	}
 
 
 }
@@ -558,6 +817,10 @@ padding-bottom: 0px;
 
 
 @media (max-width: 768px) {
+	
+	.ideas-page-neighborhoods-panel-md-devices {
+		display: none;
+	}
 
 
 	/***************************************************************************/
@@ -578,16 +841,6 @@ padding-bottom: 0px;
 		width: 100%;
 	}
 
-	.ideas-lot-info-sidebar {
-		position: absolute;
-		right: 0;
-		top: 50px;
-		bottom: 0;
-		width: 100%;
-		padding-top: 10px;
-		padding-bottom: 20px;
-		overflow: scroll;	
-	}
 
 	/***************************************************************************/
 	/* PROFILES */
@@ -597,13 +850,56 @@ padding-bottom: 0px;
 	}
 
 
+	/***************************************************************************/
+	/* EDIT PROFILE */
+
+	.website-margin-bottom {
+		margin-bottom: -10px;
+	}
+
+	.profile-edit 	.profile-pic {
+		margin-bottom: 15px;
+	}
+
+	.visible-sm {
+		display: none;
+	}
+
+
+	.skills-list-margin {
+		margin-bottom: -15px;
+	}
+
+	.profile-edit-save-button-sm-devices {
+		margin-bottom: 15px;
+	}
+
+	.edit-profile-form form {
+		max-width: 500px;
+	}
+
+
+	.edit-profile-about-section {
+	max-width: 500px;
+	}
+
+	.edit-profile-about-section {
+		margin-bottom: 5px;
+	}
+
+	.skills-2nd-row {
+	display: none;
+}
+
+
+
 
 
 }
 
 
   
-}
+
 
 
 
