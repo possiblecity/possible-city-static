@@ -14,12 +14,17 @@
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/animation.css">
     <!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic|Muli:300,400,300italic,400italic|Montserrat:400,700|Open+Sans:300italic,400italic,400,300,600,700' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6/leaflet.css" /><!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6/leaflet.ie.css" /><![endif]--><script src="http://cdn.leafletjs.com/leaflet-0.6/leaflet.js"></script> 
+
 
   </head>
 
   <body>
 
-    <div class="navbar navbar-inverse">
+    <div class="navbar">
       <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
@@ -31,7 +36,7 @@
           <ul class="nav navbar-nav">
            
             <li class="active"><a href="index.html">Map</a></li>
-            <li><a href="ideas.html">Ideas</a></li>
+            <li><a href="ideas-sidebar.html">Ideas</a></li>
             <li><a href="profiles.html">Profiles</a></li>
             <li><a href="about.html">About</a></li>
           </ul>
@@ -52,7 +57,10 @@
     
 
     <div>
-     <iframe class="map" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-75.2324652671814%2C39.94782877507232%2C-75.21201610565186%2C39.95871786306636&amp;layer=mapnik" style="border: 1px solid black"></iframe>
+     
+
+     <div id="map" style="position:absolute; width:100%; height:100%"></div> 
+
     </div> 
 
 
@@ -421,5 +429,65 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script> 
     <script src="js/bootstrap.js"></script>
+
+
+    <script> 
+  
+
+      
+
+      var philadelphia = new L.LatLng(39.9522, -75.1642); 
+      var southWest = new L.LatLng(39.87, -75.28);
+      var northEast = new L.LatLng(40.14, -74.96); 
+
+      var phlBounds = new L.LatLngBounds(southWest, northEast);
+
+      // Initialize the map object 
+       var map = L.map('map', { maxZoom: 22, minZoom: 10, maxBounds: phlBounds, center: philadelphia }); 
+          
+      // Prep the background tile layer 
+
+      //var tileUrl = 'http://api.tiles.mapbox.com/v3/dmeehan.map-sued82zn/{z}/{x}/{y}.png';
+
+      // Light map theme:
+      var tileUrl = 'http://api.tiles.mapbox.com/v3/dmeehan.map-t3op9nm9/{z}/{x}/{y}.png';
+
+
+      var tileAttribution = 'Data &copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a>; contributors, Design &copy; MapBox'; 
+
+      var streets = L.tileLayer(tileUrl, { attribution: tileAttribution, }).addTo(map);
+
+
+      map.locate();
+
+      function onLocationFound(e) {
+              if (phlBounds.contains(e.latlng)) { 
+                    center = e.latlng 
+                     html = '<h3>Welcome to lotxlot!</h3>We think you are somewhere near here, so you can explore vacant lots starting with the ones near you. Publicly owned lots are yellow. Privately owned lots are blue. If you find an error in our data, <a href="mailto:info@possiblecity.co">let us know</a>.'; 
+               } else { 
+                   center = philadelphia 
+                   html = '<h3>Welcome to lotxlot!</h3>Looks like you are outside of Philadelphia, so we will start you from City Hall. Explore vacant lots from the center of the city out. Publicly owned lots are yellow. Privately owned lots are blue. If you find an error in our data, <a href="mailto:info@possiblecity.co">let us know</a>.'; 
+               } 
+
+              map.setView(center, 16);
+              L.marker(center).addTo(map).bindPopup(html).openPopup();
+      }
+
+      function onLocationError(e) { 
+              center = philadelphia; 
+              html = '<h3>Welcome to lotxlot!</h3>We are not able to find your location, so we will start you from City Hall. Explore vacant lots from the center of the city out. Publicaly owned lots are yellow. Privately owned lots are blue. If you find an error in our data, <a href="mailto:info@possiblecity.co">let us know</a>';
+
+              map.setView(center, 16);
+
+              L.marker(center).addTo(map).bindPopup(html).openPopup(); 
+       }
+
+      map.on('locationfound', onLocationFound); 
+      map.on('locationerror', onLocationError); 
+
+
+</script>
+
+
   </body>
 </html>
