@@ -554,8 +554,9 @@ padding-bottom: 0px;
 /* FOOTER  */
 
 .footer {
-	background-color: black;
+	background-color: #fff;
 	color: #999999;
+	border-top: 1px solid #ddd;
 }
 
 .footer p {
