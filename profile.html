@@ -11,6 +11,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic' rel='stylesheet' type='text/css'>
 
     <style>
 
@@ -21,19 +22,19 @@
 
   <body>
 
-    <div class="navbar navbar-inverse">
+    <div class="navbar">
       <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Possible City</a>
+        <a class="navbar-brand" href="index.html">Possible City</a>
         <div class="nav-collapse collapse">
           <ul class="nav navbar-nav">
            
             <li><a href="index.html">Map</a></li>
-            <li><a href="ideas.html">Ideas</a></li>
+            <li><a href="ideas-sidebar.html">Ideas</a></li>
             <li class="active"><a href="profiles.html">Profiles</a></li>
             <li><a href="about.html">About</a></li>
           </ul>
@@ -46,7 +47,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a href="profile.html">My Profile</a></li>
-                <li><a href="#">Edit Profile</a></li>
+                <li><a href="edit-profile.html">Edit Profile</a></li>
                 <li class="divider"></li>
                 <li><a href="#">Sign Out</a></li>
               </ul>
@@ -66,6 +67,7 @@
       
       <div class="row">
         <div class="col-lg-3 col-12">
+          <div class="panel">
 
           <div class="row margin-bottom-20">
 
@@ -77,7 +79,7 @@
 
               <h3>Cary Betagole</h3>
 
-              <p>Architect<br/>
+              <p><br/>
               Point Breeze<br/>
               <a href="#">@carybeta</a><br/>
               <a href="#">blissbit.org</a>
@@ -112,12 +114,12 @@
 
         
           
-
-        </div>
+          </div><!-- .panel -->
+        </div><!--.col-lg-3 -->
         <div class="col-lg-9 col-12">
           
           
-            
+          <div class="panel">
             <h5>About</h5>
             <p class="lead">Platea, arcu turpis, amet sit habitasse eu urna ac, ultricies elementum vel. Duis odio nunc amet augue urna adipiscing mattis.</p>
 
@@ -128,41 +130,13 @@
               
               </div>
 
-              <button type="button" href="edit-profile.html" class="btn btn-primary edit-profile-sm-devices margin-bottom-20">Edit Profile</button>
               
+              
+          </div><!-- .panel -->
 
+          <button type="button" href="edit-profile.html" class="btn btn-primary edit-profile-sm-devices margin-bottom-20">Edit Profile</button>
 
-          <!--
-          <div class="well">
-            
           
-            <div class="row">
-
-              <div class="col-6">
-                <h3>Skills I Have</h3>
-                <span class="label label-info">Digger</span> <span class="label label-info">Farmer</span>
-                <span class="label label-info">Waterer</span> <span class="label label-info">Horn-Tooter</span>
-              </div>
-
-              <div class="col-6">
-
-                <h3>Skills I Need</h3>
-               <span class="label label-info">Digger</span> <span class="label label-info">Farmer</span>
-            <span class="label label-info">Waterer</span> <span class="label label-info">Horn-Tooter</span>
-
-              </div>
-
-
-
-
-            </div>
-          
-
-            
-
-          </div>
-          -->
-
           
 
           <div class="panel activity">
@@ -173,67 +147,106 @@
 
             
               <ul class="list-group">
-                <li class="list-group-item">
+                
+                
+
+               <li class="list-group-item">
+                  
                   <div class="media">
-                  <a class="pull-left profile-img" href="#">
-                    <img class="media-object"  alt="64x64" src="img/profiles/cary.jpg" style="width: 64px; height: 64px;">
-
-                  </a>
-                  <div class="media-body">
-                    <h4 class="media-heading">Cary Betagole <small>@carybeta</small></h4>
-                    Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    <h6>Posted 1 day ago • on <a href="#">Lot #3456</a> • <a href="#">Like</a></h6>
+                  
+                    <a class="pull-left profile-img" href="#">
+                      <img class="media-object"  alt="64x64" src="img/profiles/cary.jpg" style="width: 64px; height: 64px;">
+                    </a>
                     
-                  </div>
-                </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="media">
-                  <a class="pull-left profile-img" href="#">
-                    <img class="media-object"  alt="64x64" src="img/profiles/cary.jpg" style="width: 64px; height: 64px;">
+                    <div class="media-body">
+                      <h4 class="media-heading">Cary Betagole <small>on</small> <a href="#">Lot #3456</a></h4>
+                      <img class="media-body-icon" src="img/idea-icon.png">Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                      <h6>via Twitter <i class="icon-twitter"></i> • Posted 1 day ago • <a href="#">Like</a></h6>
+                    </div>
 
-                  </a>
-                  <div class="media-body">
-                    <h4 class="media-heading">Cary Betagole <small>@carybeta</small></h4>
-                    Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-
-                    <h6>Posted 1 day ago • <a href="#">Like</a></h6>
-                    
                   </div>
-                </div>
+                
                 </li>
 
                 <li class="list-group-item">
+                  
                   <div class="media">
-                  <a class="pull-left profile-img" href="#">
-                    <img class="media-object"  alt="64x64" src="img/profiles/cary.jpg" style="width: 64px; height: 64px;">
-
-                  </a>
-                  <div class="media-body">
-                    <h4 class="media-heading">Cary Betagole <small>@carybeta</small></h4>
-                    Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-
-                    <h6>Posted 1 day ago • <a href="#">Like</a></h6>
+                  
+                    <a class="pull-left profile-img" href="#">
+                      <img class="media-object"  alt="64x64" src="img/profiles/cary.jpg" style="width: 64px; height: 64px;">
+                    </a>
                     
+                    <div class="media-body">
+                      <h4 class="media-heading">Cary Betagole <small>on</small> <a href="#">Lot #3456</a></h4>
+                      <img class="media-body-icon" src="img/comment-icon.png">Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                      <h6>via Twitter <i class="icon-twitter"></i> • Posted 1 day ago • <a href="#">Like</a></h6>
+                    </div>
+
                   </div>
-                </div>
+                
                 </li>
 
                 <li class="list-group-item">
+                  
                   <div class="media">
-                  <a class="pull-left profile-img" href="#">
-                    <img class="media-object"  alt="64x64" src="img/profiles/cary.jpg" style="width: 64px; height: 64px;">
-
-                  </a>
-                  <div class="media-body">
-                    <h4 class="media-heading">Cary Betagole <small>@carybeta</small></h4>
-                    Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-
-                    <h6>Posted 1 day ago • <a href="#">Like</a></h6>
+                  
+                    <a class="pull-left profile-img" href="#">
+                      <img class="media-object"  alt="64x64" src="img/profiles/cary.jpg" style="width: 64px; height: 64px;">
+                    </a>
                     
+                    <div class="media-body">
+                      <h4 class="media-heading">Cary Betagole <small>on</small> <a href="#">Lot #3456</a></h4>
+                      <img class="media-body-icon" src="img/like-icon.png">Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                      <h6>via Twitter <i class="icon-twitter"></i> • Posted 1 day ago • <a href="#">Like</a></h6>
+                    </div>
+
                   </div>
-                </div>
+                
                 </li>
+
+                <li class="list-group-item">
+                  
+                  <div class="media">
+                  
+                    <a class="pull-left profile-img" href="#">
+                      <img class="media-object"  alt="64x64" src="img/profiles/cary.jpg" style="width: 64px; height: 64px;">
+                    </a>
+                    
+                    <div class="media-body">
+                      <h4 class="media-heading">Cary Betagole <small>on</small> <a href="#">Lot #3456</a></h4>
+                      <img class="media-body-icon" src="img/idea-icon.png">Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                      <h6>via Twitter <i class="icon-twitter"></i> • Posted 1 day ago • <a href="#">Like</a></h6>
+                    </div>
+
+                  </div>
+                
+                </li>
+
+                <li class="list-group-item">
+                  
+                  <div class="media">
+                  
+                    <a class="pull-left profile-img" href="#">
+                      <img class="media-object"  alt="64x64" src="img/profiles/cary.jpg" style="width: 64px; height: 64px;">
+                    </a>
+                    
+                    <div class="media-body">
+                      <h4 class="media-heading">Cary Betagole <small>on</small> <a href="#">Lot #3456</a></h4>
+                      <img class="media-body-icon" src="img/comment-icon.png">Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                      <h6>via Twitter <i class="icon-twitter"></i> • Posted 1 day ago • <a href="#">Like</a></h6>
+                    </div>
+
+                  </div>
+                
+                </li>
+
+
+
+
+
+
+
+
                 
               </ul>
 

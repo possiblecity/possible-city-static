@@ -4,6 +4,7 @@
 
 body, html {
 	height: 100%;
+	background: url('../img/pattern_greysquares.png');
 
 }
 
@@ -19,22 +20,66 @@ img {
 	border: 1px solid #dddddd;
 }
 
+.jumbotron {
+	border: 1px solid #ddd;
+	background-color: #fff;
+}
+
+.asterisk:before {
+	content:"*" ;
+     color:red   
+     
+} 
+
+.areas-of-focus h3, .areas-of-focus p  {
+	display: inline;
+}
+
+.areas-of-focus h3, .areas-of-focus p  {
+	margin-right: 10px;	
+}
+
+
+
+.areas-of-focus img  {
+	margin-bottom: 10px;
+}
+
+
+
 
 
 /***************************************************************************/
 /* TYPOGRAPHY */
 
+body {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+h6 {
+	font-weight: 300;
+}
+
 h5 {
 	text-transform: uppercase;
 }
 
-.form-group label, .skills p {
+.form-group label {
 	text-transform: uppercase;
 	font-size: 14px;
 	margin-top: 0px;
 	margin-bottom: 8px;
-	font-weight: 500;
+	font-weight: 700;
 	line-height: 1.1;
+	
 }
 
 .form-group {
@@ -47,11 +92,17 @@ h5 {
 	color: #6F6F6F;
 }
 
+form p {
+	font-style: italic;
+}
+
 
 
 
 /***************************************************************************/
 /* SPACING STYLES */
+
+
 
 
 .margin-bottom-10 {
@@ -66,7 +117,13 @@ h5 {
 	margin-bottom: 20px;
 }
 
+.margin-top-20 {
+	margin-top: 20px;
+}
 
+.margin-top-30 {
+	margin-top: 30px;	
+}
 
 
 /***************************************************************************/
@@ -75,14 +132,105 @@ h5 {
 .navbar {
 	margin-bottom: 20px;
 	border-radius: 0px;
+	background: #68C4EA;
+}
+
+.margin-bottom-0 {
+	margin-bottom: 0px;
+}
+
+.navbar-brand {
+	display: block;
+	width: 200px;
+	padding: 0px 15px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 50px;
+	color: #777777;
+	text-align: center;
+	text-indent: -9999px;
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+}
+
+.navbar-nav > li > a {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	line-height: 20px;
+	color: #eee;
+	border-radius: 0px;
+}
+
+.navbar-nav > .dropdown > a .caret {
+	border-top-color: #eee;
+	border-bottom-color: #eee;
+}
+
+.navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+	color: #555555;
+	background-color: #BEE0EA;
+}
+
+.navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus {
+color: #555555;
+background-color: #BEE0EA;
+}
+
+
+.page-header {
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	margin: -20px 0 20px;
+	padding-top: 20px;
+}
+
+.navbar-toggle {
+	background-color: #f6f6f6;
 }
 
 
 
 
+
+/***************************************************************************/
+/* Homepage */
+
+.hero-image-homepage {
+	background: #000000 url(../img/hero-image-homepage-paintbrush.jpg);
+	height: 550px;
+	color: #ffffff;
+}
+
+.hero-image-homepage p {
+	font-size: 35px;
+	font-weight: 600;
+}
+
+.quotation-icon {
+	width: 30px;
+	height: 15px;
+	float: left;
+	padding-right: 10px;
+}
+
 /***************************************************************************/
 /* MAP STYLES */
 
+
+#map {
+	margin-top: -20px;
+
+}
+
+
+.map-homepage {
+	width: 93%;
+	height: 93%;
+	margin-top: 20px;
+
+}
 
 .map-idea-profile-width {
 	width:70px;
@@ -93,6 +241,11 @@ h5 {
 #info .bold p {
 	padding-left: 15px;
 	font-weight: bold;
+}
+
+.info-tab-border {
+	border-right:1px solid #dddddd;
+	border-left:1px solid #dddddd;
 }
 
 
@@ -129,7 +282,8 @@ border-bottom: none;
 }
 
 .sidebar  .lot-id-header h2 {
-	font-style: italic; 
+	/*font-style: italic; */
+	font-weight: 400;
 }
 
 .sidebar .close-button {
@@ -154,6 +308,11 @@ font-size: 20px;
 
 }
 
+.ideas-page-sidebar .nav-tabs > li {
+text-align: center;
+width: 33.333333333333%;
+}
+
 .sidebar .nav-tabs > li > a {
 	color: #555555;
 	background-color: #dddddd;
@@ -170,7 +329,7 @@ font-size: 20px;
 	border-right: none;
 } 
 
-.ideas-page-sidebar .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+.ideas-page-sidebar .nav-tabs > li.active > a {
 background-color: #F3F3F3;
 border-top: none;
 }
@@ -198,6 +357,37 @@ border-top: none;
 
 
 
+.featured-projects .lot-id-header {
+	margin-bottom: -15px;
+}
+
+.featured-projects .activity .list-group-item {
+padding: 15px 15px 10px 15px;
+}
+
+.like-margin {
+	margin-right: 5px;
+}
+
+.comment-margin {
+	margin-left: 5px;
+}
+
+.comment-profile-img {
+	width: 20px;
+	height: 20px;
+
+}
+
+.small-profile-name {
+	font-size: 15px;
+}
+
+.2nd-hr-threaded-comment {
+	margin-top: 10px;
+}
+
+
 /***************************************************************************/
 /* ACTIVITY FEED */
 
@@ -214,6 +404,7 @@ border-top: none;
 
 .activity .list-group-item {
 	padding: 15px 30px 10px 15px;
+	cursor: pointer;
 }
 
 .panel.activity .panel-heading {
@@ -260,7 +451,6 @@ border: 1px solid #dddddd;
 color:#111111;
 height: 42px;
 margin-right: 10px;
-position: relative;
 }
 
 .facebook-logo {
@@ -309,24 +499,50 @@ position: relative;
 	margin-top: 5px;
 }
 
+.sign-in-button-modal {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
 
+.media-body-icon {
+	width: 18px;
+	height: 18px;
+	margin-right: 5px;
+	margin-top: -5px;
+}
+
+.profile-name, .profile-name:hover {
+	color: #000000;
+}
+
+
+.latest-activity .lot-id-header {
+	margin-bottom: -15px;
+}
 
 
 /***************************************************************************/
 /* LOT INFO IN SIDEBAR */
 
 #info .table {
-margin-left: 15px;
-margin-top: -10px;
+margin-top: 15px;
 border-bottom: 1px solid #dddddd;
 }
 
+.table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
+padding: 8px;
+padding-left: 0px;
+}
+
+.table thead > tr > th {
+padding-left: 0px;	
+}
 
 
 
 .navbar-nav > li > a.dropdown-toggle.signed-in {
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 8px;
 	line-height: 30px;
 }
 
@@ -483,19 +699,50 @@ text-align: center;
 margin-bottom: 15px;
 }
 
+#sign-up-modal-add-idea .sign-up-buttons {
+	margin-bottom: 0px;
+}
+
 .modal-body {
 padding-bottom: 0px;
 }
 
+#sign-up-modal .close {
+	float: none;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
 
+#sign-up-modal h5, #sign-in-modal h5, #sign-up-modal-add-idea h5 {
+	text-transform: lowercase;
+}
+
+#sign-up-modal label, #sign-in-modal label, #sign-up-modal-sms-users label, #sign-up-modal-add-idea label  {
+	font-weight: 500;
+	text-transform: none;
+}
+
+#sign-up-modal-sms-users p {
+	font-size: 18px;
+}
+
+#sign-up-modal-sms-users .btn-primary {
+	margin-right: 10px;
+}
+
+.close {
+opacity: 0.6;
+}
 
 
 /***************************************************************************/
 /* FOOTER  */
 
 .footer {
-	background-color: black;
+	background-color: #fff;
 	color: #999999;
+	border-top: 1px solid #ddd;
 }
 
 .footer p {
@@ -513,25 +760,10 @@ padding-bottom: 0px;
 /***************************************************************************/
 	/* SIDEBAR STYLES */
 
-	.sidebar {
-		position: absolute;
-		right: 0;
-		top: 51px;
-		bottom: 0;
-		width: 400px;
-		padding-top: 10px;
-		padding-bottom: 20px;
-		overflow: scroll;
-	}
+	
 
-	.ideas-page-sidebar	{
-		position: static;
-		width: 100%;
-		border: 1px solid #dddddd;
-		border-radius: 4px;
-		padding-top: 0px;
-		overflow: visible;
-	}
+
+
 
 	.ideas-page-sidebar	h1, .ideas-page-sidebar h2 {
 		display: inline;
@@ -652,6 +884,106 @@ padding-bottom: 0px;
 }
 
 
+/***************************************************************************/
+/* ABOUT PAGE */
+
+.about h1 {
+	text-transform: uppercase;
+	font-size: 60px;
+	margin-bottom: 30px;
+}
+
+.about-hero p {
+	font-size: 40px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.about h2 {
+	text-transform: uppercase;
+	font-size: 45px;
+}
+
+
+
+.team img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+
+}
+
+.about h5 {
+	margin-bottom: 5px;
+}
+
+.margin-bottom-20 {
+	margin-bottom: -0px;
+}
+
+.padding-left-30 {
+	padding-left: 30px;
+}
+
+.panel-body {
+	margin-top: 25px;
+}
+
+.panel-heading {
+	padding: 10px 15px;
+	margin: -15px -15px -17px;
+	background-color: #ffffff;
+}
+
+.panel-heading {
+	border-bottom: 0px;
+}
+
+.panel-default {
+	border: 0px;
+	margin-bottom: -10px;
+}
+
+.panel-body {
+	margin-top: 5px;
+}
+
+.board-of-advisors h5 {
+	margin-bottom: 0px;
+	display: inline;
+	padding-right: 5px; 
+}
+
+.board-of-advisors p {
+	margin-top: 10px;
+}
+
+.margin-bottom--10px {
+	margin-bottom: 5px;
+}
+
+
+
+.board-of-advisors h6 {
+	text-transform: uppercase;
+	display: inline;
+
+}
+
+.panel-group, #accordion {
+	border-bottom: 0px;
+}
+
+.margin-top--10 {
+	margin-top: -10px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -661,43 +993,6 @@ padding-bottom: 0px;
 /***************************************************************************/
 /******************************************************* RESPONSIVE STYLES */
 
-@media (min-width: 769px) {
-
-
-	.profile-edit-save-button-2 {
-		display: none;
-	}	
-	
-	/***************************************************************************/
-	/* MAP STYLES */
-	.map {
-		margin-top: -20px;
-		min-height: 93%; /* min. height for modern browser */
-	    height:auto !important; /* important rule for modern Browser */
-	    height:93%; /* min. height for IE */
-	    overflow: hidden !important; /* FF scroll-bar */
-	    float: left;
-	}
-
-
-
-
-
-	/***************************************************************************/
-	/* FOOTER */
-
-	.homepage-footer {
-		position: fixed;
-		bottom: 0;
-		z-index: 10000000;
-		width: 100%;
-		height: 20px;
-	}
-
-
-
-
-}
 
 
 @media (min-width: 1200px) {
@@ -722,6 +1017,8 @@ padding-bottom: 0px;
 	}
 
 
+
+
 	/***************************************************************************/
 	/* EDIT PROFILE */
 
@@ -743,6 +1040,9 @@ padding-bottom: 0px;
 	}
 
 
+
+
+
 }
 
 
@@ -760,6 +1060,13 @@ padding-bottom: 0px;
 
 
 @media (max-width: 992px) {
+
+	
+		.sign-in-button-modal {
+		margin-top: 0px;
+		
+}
+
 
 	/***************************************************************************/
 	/* EDIT PROFILE */
@@ -815,10 +1122,76 @@ padding-bottom: 0px;
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
+
+
+	.profile-edit-save-button-2 {
+		display: none;
+	}	
+
+
+	#map {
+		position:absolute;
+		width: 93%;
+		height: 93%;
+
+	}
+
+	.sidebar {
+		position: absolute;
+		right: 0;
+		top: 51px;
+		bottom: 0;
+		width: 400px;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		overflow: scroll;
+	}
+
+
+
+
+	.ideas-page-sidebar	{
+		position: static;
+		width: 100%;
+		border: 1px solid #dddddd;
+		border-radius: 4px;
+		padding-top: 0px;
+		overflow: visible;
+		display: none;
+	}
+
+
+	
+	
+
+
+
+
+
+
+	/***************************************************************************/
+	/* FOOTER */
+
+	.homepage-footer {
+		position: fixed;
+		bottom: 0;
+		z-index: 10000000;
+		width: 100%;
+		height: 20px;
+	}
+
+
 
 	.visible-xs {
 		display: none;
+	}
+
+	/***************************************************************************/
+	/* MODAL */
+
+	#sign-up-modal .modal-content, #sign-in-modal .modal-content, #sign-up-modal-sms-users .modal-content, #sign-up-modal-add-idea .modal-content {
+		width: 460px;
 	}
 
 	/***************************************************************************/
@@ -829,7 +1202,11 @@ padding-bottom: 0px;
 	}
 
 
+
 }
+
+
+
 
 
 
@@ -844,9 +1221,33 @@ padding-bottom: 0px;
 
 	/***************************************************************************/
 	/* MAP STYLES */
-	.map {
+	
+
+	#map {
+		position: static;
 		width: 100%;
 		height: 300px;
+		margin-top: -20px;
+	}
+
+	.map-hopmepage {
+		position: static;
+		margin-top: 40px;
+	}
+
+	/***************************************************************************/
+	/* MODAL */
+
+	#sign-up-modal .modal-content, #sign-in-modal .modal-content, #sign-up-modal-sms-users .modal-content, #sign-up-modal-add-idea .modal-content {
+		width: 80%;
+	}
+
+	#sign-up-modal-sms-users h2 {
+		font-size: 22px;
+	}
+
+	#sign-up-modal-sms-users p {
+		font-size: 14px;
 	}
 
 
@@ -858,7 +1259,16 @@ padding-bottom: 0px;
 	/* SIDEBAR STYLES */
 	.sidebar {
 		width: 100%;
+
 	}
+
+	.latest-activity {
+		position: static;
+		top: 0;
+		overflow: visible;
+	}
+
+
 
 
 	/***************************************************************************/
@@ -907,6 +1317,18 @@ padding-bottom: 0px;
 	.skills-2nd-row {
 	display: none;
 }
+
+
+
+	#sign-in-modal .modal-dialog {
+	width: 370px;
+}
+
+
+
+}
+
+
 
 
 
