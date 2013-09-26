@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/animation.css">
     <!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic|Muli:300,400,300italic,400italic|Montserrat:400,700|Open+Sans:300italic,400italic,400,300,600,700' rel='stylesheet' type='text/css'>
 
 
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6/leaflet.css" /><!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6/leaflet.ie.css" /><![endif]--><script src="http://cdn.leafletjs.com/leaflet-0.6/leaflet.js"></script> 
@@ -60,24 +60,30 @@
     <div>
      
 
-     <div id="map" ></div> 
+     <div id="map"></div> 
 
     </div> 
 
 
-    <div class="sidebar ideas-lot-info-sidebar featured-projects">
+    <div class="sidebar ideas-lot-info-sidebar">
 
-    
+    <div class="close-button pull-right">
+    <button type="button" class="close ">&times;</button>
+    </div>
 
     <div class="clearfix">
     </div>
 
-    <div class="lot-id-header  text-center">
-      <h1>Featured Projects</h1>
+    <div class="lot-id-header text-center">
+      <h1>Lot #2345</h1>
+      <h2>2827 Opal Street</h2>
     </div>
     
 
-    
+    <ul id="sidebar-tabs" class="nav nav-tabs">
+      <li class="active"><a href="#ideas" data-toggle="tab">Ideas</a></li>
+      <li class=""><a href="#info" data-toggle="tab">Info</a></li>
+    </ul>
     
     <div id="sidebar-tabs-content" class="tab-content">
       <div class="tab-pane fade active in" id="ideas">
@@ -85,57 +91,128 @@
     
 
           <div class="activity">
-          
           <ul class="list-group">
                 
             <div class="nav-tab-button text-center">
             
 
+
+          
+
+
             </div>
 
                
-                
+                <li class="list-group-item">
+                  <div class="media">
+                  <a class="pull-left profile-img" href="#">
+                    <img class="media-object"  alt="64x64" src="img/profiles/profile.png" style="width: 64px; height: 64px;">
+
+                  </a>
+                  <div class="media-body">
+                    <textarea class="form-control" placeholder="Add your idea for this lot" rows="2" ></textarea>
+
+                    <a data-toggle="modal" href="#sign-up-modal-add-idea" class="btn btn-primary btn pull-right">Add idea</a>
+      
+                    
+                  </div>
+                </div>
+                </li> 
 
 
                 <li class="list-group-item">
-                  <img src="img/free-shop-coffee-shop.jpg" alt="free-shop-coffee-shop">
-                  <h4>Lot #7564</h4>
-                  <p>Tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                  
+                  <div class="media">
+                  
+                    <a class="pull-left profile-img" href="#">
+                      <img class="media-object"  alt="64x64" src="img/profiles/cary.jpg" style="width: 64px; height: 64px;">
+                    </a>
+                    
+                    <div class="media-body">
+                      <h4 class="media-heading"><a class="profile-name" href="#">Cary Betagole</a> <small>on</small> <a href="#">Lot #3456</a></h4>
+                      <img class="media-body-icon" src="img/idea-icon.png">Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                      <h6>via Twitter <i class="icon-twitter"></i> • Posted 1 day ago</h6>
+                      <h6><a class="like-margin" href="#">Like (4)</a>•<a class="comment-margin" href="index-lot-selected-comment.html">Comment (3)</a></h6>
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                  </div>
                 
                 </li>
 
                 <li class="list-group-item">
-                  <img src="img/signs.jpg" alt="signs">
-                  <h4>Lot #7564</h4>
-                  <p>Tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                  <div class="media">
+                  <a class="pull-left profile-img" href="#">
+                    <img class="media-object"  alt="64x64" src="img/profiles/ben.jpg" style="width: 64px; height: 64px;">
+                  </a>
+
+                  <div class="media-body">
+                    <h4 class="media-heading"><a class="profile-name" href="#">Ben Rodigas</a> <small>on</small> <a href="#">Lot #8273</a></h4>
+                    <img class="media-body-icon" src="img/idea-icon.png">Tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    <div class="thumbnail"><img src="img/vacant_lot.jpg" alt="vacant_lot"></div>
+                    <h6>via Instagram <i class="icon-instagram"></i>• Posted 1 day ago</h6>
+                    <h6><a class="like-margin" href="#">Like</a>•<a class="comment-margin" href="index-lot-selected-comment.html">Comment</a></h6>  
+                  </div>
+                
+                </div>
                 
                 </li>
 
 
 
                 <li class="list-group-item">
-                  <img src="img/vacant_lot.jpg" alt="vacant_lot">
-                  <h4>Lot #7564</h4>
-                  <p>Tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                
+                  <div class="media">
+                  <a class="pull-left profile-img" href="#">
+                    <img class="media-object"  alt="64x64" src="img/profiles/justin.jpg" style="width: 64px; height: 64px;">
+
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading"><a class="profile-name" href="#">Justin Broglie</a> <small>on</small> <a href="#">Lot #2637</a></h4>
+                      <img class="media-body-icon" src="img/idea-icon.png">Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                      <h6>via SMS <i class="icon-mobile-alt"></i> • Posted 4 days ago</h6>
+                      <h6><a class="like-margin" href="#">Like</a>•<a class="comment-margin" href="index-lot-selected-comment.html">Comment</a></h6>
+                  </div>
+                </div>
                 </li>
 
 
+                <li class="list-group-item">
+                  <div class="media">
+                  <a class="pull-left profile-img" href="#">
+                    <img class="media-object"  alt="64x64" src="img/profiles/danielle.jpg" style="width: 64px; height: 64px;">
 
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading"><a class="profile-name" href="#">Danielle Heitmann</a> <small>on</small> <a href="#">Lot #2637</a></h4>
+                      <img class="media-body-icon" src="img/idea-icon.png">Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                      <h6>via Instagram <i class="icon-instagram"></i>• Posted 1 day ago</h6>
+                    <h6><a class="like-margin" href="#">Like</a>•<a class="comment-margin" href="index-lot-selected-comment.html">Comment</a></h6>
+                  </div>
+                </div>
+                </li>
 
+                <li class="list-group-item">
+                  <div class="media">
+                  <a class="pull-left profile-img" href="#">
+                    <img class="media-object"  alt="64x64" src="img/profiles/cary.jpg" style="width: 64px; height: 64px;">
 
-
-
-
-
-
-
-
-
-
-                
-
-
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-heading"><a class="profile-name" href="#">Cary Betagole</a><small>on</small> <a href="#">Lot #2637</a></h4>
+                      <img class="media-body-icon" src="img/idea-icon.png">Odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                      <h6>via Instagram <i class="icon-instagram"></i>• Posted 1 day ago</h6>
+                    <h6><a class="like-margin" href="#">Like</a>•<a class="comment-margin" href="index-lot-selected-comment.html">Comment</a></h6>
+                  </div>
+                </div>
+                </li>
                 
               
                 
@@ -149,7 +226,104 @@
 
 
 
-     
+      <div class="tab-pane fade" id="info">
+       
+       <div class="lot-info-table"> 
+         <table class="table">
+            <thead>
+              <tr>
+              <th>Owner:</th>
+              <td>City of Philadelphia (public)</td>
+            </tr>
+            </thead>
+            
+            <tbody>
+            <tr>
+              <th>Sale Price:</th>
+              <td>$3,847.98</td>
+            </tr>  
+            <tr>
+              <th>For Sale By:</th>
+              <td>PUB for Broker Sales</td>
+            </tr>
+            <tr>
+              <th>Liens:</th>
+              <td>$538.34</td>
+            </tr>
+            
+            <tr>
+              <th>Council District:</th>
+              <td>Mark Squilla</td>
+            </tr>
+            <tr>
+              <th>Council Member:</th>
+              <td>Mark Squilla</td>
+            </tr>
+            <tr>
+              <th>Zoning District:</th>
+              <td>CMX2</td>
+            </tr>
+            
+            <tr>
+              <th>Size:</th>
+              <td>6091.7 square feet</td>
+            </tr>
+           </tbody>
+          </table>
+          </div><!--/lot-info -->
+
+       
+          
+
+
+          <ul class="list-group">
+              
+            <h5>User Notes</h5>
+               
+                
+                <li class="list-group-item">
+                  
+                  <div class="media">
+                  
+                    <a class="pull-left profile-img" href="#">
+                      <img class="media-object"  alt="64x64" src="img/profiles/cary.jpg" style="width: 64px; height: 64px;">
+                    </a>
+                    
+                    <div class="media-body">
+                      <h4 class="media-heading">Cary Betagole</h4>
+                      This lot is in process of being purchased by my neighbor. 
+                      <h6>Posted 1 day ago</h6>
+                    </div>
+
+                  </div>
+                
+                </li>
+
+                <li class="list-group-item">
+                  <div class="media">
+                  <a class="pull-left profile-img" href="#">
+                    <img class="media-object"  alt="64x64" src="img/profiles/profile.png" style="width: 64px; height: 64px;">
+
+                  </a>
+                  <div class="media-body">
+                    <textarea class="form-control margin-bottom-15" placeholder="Add your note on this lot" rows="2" ></textarea>
+
+                    <a data-toggle="modal" href="#sign-up-modal-add-idea" class="btn btn-primary btn pull-right">Add note</a>
+                  </div>
+
+                </div>
+                </li> 
+
+              </ul>
+
+
+
+
+    
+
+
+    </div><!-- /#sidebar-tabs-content -->
+
     
 
     
@@ -432,37 +606,8 @@
 
       var streets = L.tileLayer(tileUrl, { attribution: tileAttribution, }).addTo(map);
 
-      var lotStyle = {
-          "color": "#FFF200",
-          "weight": 3,
-          "opacity": 0.8
-      };
 
-     
-
-
-
-       /*
-      $.getJSON('http://blissbit.org/static/possiblecity/lot_data.json', function(data){
-         vacant  = L.geoJson(data, {
-           style: lotStyle,
-           //onEachFeature: onEachFeature
-       }).addTo(map);
-    */
-
-    var jsonData = {"crs": null, "type": "FeatureCollection", "features": [{"geometry": {"type": "MultiPolygon", "coordinates": [[[[-75.17999468194623, 39.9366667210566], [-75.18000506109064, 39.93661649878199], [-75.18001625998254, 39.9365678743496], [-75.18002126475332, 39.93654351772246], [-75.18007545520344, 39.93655080755143], [-75.18004852733179, 39.93667366708634], [-75.17999468194623, 39.9366667210566]]]]}, "type": "Feature", "id": 21, "properties": {"is_public": false, "slug": "2143-latona-st-philadelphia-pa", "id": 21, "address": "2143 Latona St"}}, {"geometry": {"type": "MultiPolygon", "coordinates": [[[[-75.17576391888018, 39.93175804925458], [-75.1757724303335, 39.931719101204465], [-75.17577780264448, 39.931720978772304], [-75.17579819561989, 39.93172322594325], [-75.17581788526107, 39.93172581142124], [-75.17587196885721, 39.93173247382905], [-75.17587871147134, 39.93173414067862], [-75.17588659045056, 39.93173562399959], [-75.17589588919172, 39.93173670309767], [-75.17590128069986, 39.93173640514402], [-75.17594150953263, 39.93174235288136], [-75.17593290838118, 39.93178039611353], [-75.17583833846665, 39.93176790814059], [-75.17582933440677, 39.93176683565248], [-75.17580703581972, 39.93176459436739], [-75.17579323902449, 39.93176231776228], [-75.17576391888018, 39.93175804925458]]]]}, "type": "Feature", "id": 34, "properties": {"is_public": false, "slug": "1540-dorrance-st-philadelphia-pa", "id": 34, "address": "1540 Dorrance St"}}, {"geometry": {"type": "MultiPolygon", "coordinates": [[[[-75.17081109758944, 39.93537745511496], [-75.17083865156197, 39.935240653847075], [-75.17089373258199, 39.93524703463571], [-75.17086616589859, 39.93538414287449], [-75.17081109758944, 39.93537745511496]]]]}, "type": "Feature", "id": 46, "properties": {"is_public": false, "slug": "1602-latona-st-philadelphia-pa", "id": 46, "address": "1602 Latona St"}}, {"geometry": {"type": "MultiPolygon", "coordinates": [[[[-75.18069976455351, 39.93269909886214], [-75.1806890984727, 39.932697651645206], [-75.18067502854356, 39.93269596598563], [-75.18067670796594, 39.9326881044425], [-75.18070343309478, 39.93256329138228], [-75.18075298376252, 39.932569672409244], [-75.18072561145229, 39.9326944556627], [-75.18072391404903, 39.9327022357125], [-75.18069976455351, 39.93269909886214]]]]}, "type": "Feature", "id": 53, "properties": {"is_public": false, "slug": "2137-cross-st-philadelphia-pa", "id": 53, "address": "2137 Cross St"}}, {"geometry": {"type": "MultiPolygon", "coordinates": [[[[-75.17304664169396, 39.93609527794522], [-75.1730753574782, 39.93594322024619], [-75.173075803621, 39.93594250495455], [-75.17307764326347, 39.93593704920444], [-75.17313096058427, 39.935943599208855], [-75.17312980908089, 39.935949119076014], [-75.17310051758115, 39.93610253429225], [-75.17304664169396, 39.93609527794522]]]]}, "type": "Feature", "id": 68, "properties": {"is_public": true, "slug": "1730-manton-st-philadelphia-pa", "id": 68, "address": "1730 Manton St"}}, {"geometry": {"type": "MultiPolygon", "coordinates": [[[[-75.17287404368868, 39.93656153427011], [-75.17291266044006, 39.93635550399916], [-75.17296594237847, 39.936362439813095], [-75.17292962206736, 39.936570326430704], [-75.17287404368868, 39.93656153427011]]]]}, "type": "Feature", "id": 9325, "properties": {"is_public": false, "slug": "1722-federal-st-philadelphia-pa", "id": 9325, "address": "1722 Federal St"}}, {"geometry": {"type": "MultiPolygon", "coordinates": [[[[-75.17544505262602, 39.938348479625404], [-75.17546387180332, 39.93825967925172], [-75.17547283703749, 39.93821205382434], [-75.17552605787127, 39.93821842210359], [-75.17549857260656, 39.93835579078276], [-75.17544505262602, 39.938348479625404]]]]}, "type": "Feature", "id": 9339, "properties": {"is_public": false, "slug": "1910-alter-st-philadelphia-pa", "id": 9339, "address": "1910 Alter St"}}, {"geometry": {"type": "MultiPolygon", "coordinates": [[[[-75.17152985562842, 39.93615916747587], [-75.17153027230502, 39.936159198468154], [-75.17159321323916, 39.93616988045681], [-75.1716070784706, 39.93617225549703], [-75.17155770153258, 39.93634486905869], [-75.17155682803443, 39.93634608110698], [-75.1714909819511, 39.93633539685693], [-75.17149164199137, 39.936333671837936], [-75.17152985562842, 39.93615916747587]]]]}, "type": "Feature", "id": 9346, "properties": {"is_public": false, "slug": "1624-federal-st-philadelphia-pa", "id": 9346, "address": "1624 Federal St"}}, {"geometry": {"type": "MultiPolygon", "coordinates": [[[[-75.17170811595449, 39.93600536605159], [-75.17178008689908, 39.936018174609536], [-75.17174146378258, 39.936195099869096], [-75.17170176745626, 39.936188351768784], [-75.1716593246912, 39.93618112474102], [-75.17170811595449, 39.93600536605159]]]]}, "type": "Feature", "id": 9347, "properties": {"is_public": false, "slug": "1631-manton-st-philadelphia-pa", "id": 9347, "address": "1631 Manton St"}}, {"geometry": {"type": "MultiPolygon", "coordinates": [[[[-75.1716070784706, 39.93617225549703], [-75.17159321323916, 39.93616988045681], [-75.17164099694291, 39.93599347293525], [-75.171641018907, 39.93599341846715], [-75.17170811595449, 39.93600536605159], [-75.1716593246912, 39.93618112474102], [-75.1716070784706, 39.93617225549703]]]]}, "type": "Feature", "id": 9348, "properties": {"is_public": false, "slug": "1629-manton-st-philadelphia-pa", "id": 9348, "address": "1629 Manton St"}}, {"geometry": {"type": "MultiPolygon", "coordinates": [[[[-75.17155682803443, 39.93634608110698], [-75.17155770153258, 39.93634486905869], [-75.1716070784706, 39.93617225549703], [-75.1716593246912, 39.93618112474102], [-75.17170176745626, 39.936188351768784], [-75.17165339745854, 39.936360777166115], [-75.1716530781015, 39.93636169803118], [-75.17155682803443, 39.93634608110698]]]]}, "type": "Feature", "id": 9349, "properties": {"is_public": false, "slug": "1626-federal-st-philadelphia-pa", "id": 9349, "address": "1626 Federal St"}}, {"geometry": {"type": "MultiPolygon", "coordinates": [[[[-75.17260452825012, 39.93604004370492], [-75.17263533813241, 39.93588263698292], [-75.17263581345985, 39.93588269541869], [-75.17263853375434, 39.93588303046013], [-75.17263930496216, 39.93588312617968], [-75.17268921119236, 39.93588940691688], [-75.17265849151333, 39.93604669133778], [-75.17260452825012, 39.93604004370492]]]]}, "type": "Feature", "id": 9351, "properties": {"is_public": false, "slug": "1714-manton-st-philadelphia-pa", "id": 9351, "address": "1714 Manton St"}}, {"geometry": {"type": "MultiPolygon", "coordinates": [[[[-75.17268921119236, 39.93588940691688], [-75.17269238251137, 39.93588960793047], [-75.17274088160737, 39.93589567952336], [-75.17273931296567, 39.935901704492274], [-75.17270924344167, 39.93605295863216], [-75.17265849151333, 39.93604669133778], [-75.17268921119236, 39.93588940691688]]]]}, "type": "Feature", "id": 9352, "properties": {"is_public": false, "slug": "1716-manton-st-philadelphia-pa", "id": 9352, "address": "1716 Manton St"}}, {"geometry": {"type": "MultiPolygon", "coordinates": [[[[-75.17244684873417, 39.93602019077187], [-75.17245568486906, 39.93597327083305], [-75.17246500425597, 39.93592907020273], [-75.17247767165773, 39.93586948611937], [-75.17247852440754, 39.93586502454182], [-75.17247884704398, 39.93586333788657], [-75.17247895075833, 39.9358633807631], [-75.17247907435338, 39.93586342408646], [-75.17252957774322, 39.93586963632225], [-75.17253308276507, 39.935869957466686], [-75.17258414372988, 39.935876343490634], [-75.17258359418845, 39.93587814938672], [-75.17258235074407, 39.93588223457092], [-75.17258189178901, 39.93588217650289], [-75.17255166595152, 39.93603371632175], [-75.17249798669808, 39.93602677137931], [-75.17244684873417, 39.93602019077187]]]]}, "type": "Feature", "id": 9353, "properties": {"is_public": false, "slug": "1708-10-manton-st-philadelphia-pa", "id": 9353, "address": "1708-10 Manton St"}}, {"geometry": {"type": "MultiPolygon", "coordinates": [[[[-75.17101543711328, 39.935792766965996], [-75.1709807576908, 39.93578731265512], [-75.17100812772549, 39.93564989452528], [-75.17106495479885, 39.93565721640332], [-75.17103671172069, 39.93579611510107], [-75.17101543711328, 39.935792766965996]]]]}, "type": "Feature", "id": 9354, "properties": {"is_public": false, "slug": "1606-manton-st-philadelphia-pa", "id": 9354, "address": "1606 Manton St"}}]};
-
-
-
-      var vacant = L.geoJson(jsonData, {
-        style: lotStyle
-      }).addTo(map);
-
-      map.fitBounds(vacant.getBounds());
-
-      //map.locate();
-
-
+      map.locate();
 
       function onLocationFound(e) {
               if (phlBounds.contains(e.latlng)) { 
@@ -488,10 +633,6 @@
 
       map.on('locationfound', onLocationFound); 
       map.on('locationerror', onLocationError); 
-
-      
-
-      
 
 
 </script>
