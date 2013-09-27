@@ -978,7 +978,21 @@ opacity: 0.6;
 	margin-top: -10px;
 }
 
+.lot-images .col-lg-2 {
+	padding-right: 5px;
+	padding-left: 5px;
+}
 
+.lot-images .col-lg-4 {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.lot-images .lot-images-row {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 10px;
+}
 
 
 
