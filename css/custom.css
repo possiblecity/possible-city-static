@@ -211,6 +211,8 @@ background-color: #BEE0EA;
 	padding-top: 20px;
 }
 
+
+
 .navbar-toggle {
 	background-color: #f6f6f6;
 }
@@ -530,7 +532,7 @@ padding: 15px 15px 10px 15px;
 
 .activity .list-group-item {
 	padding: 15px 30px 10px 15px;
-	cursor: pointer;
+	
 }
 
 .panel.activity .panel-heading {
@@ -1121,15 +1123,65 @@ p.lead-big {
 
 
 
+/***************************************************************************/
+/* LOT DETAIL PAGE  */
 
 
+.lot-detail-panel {
+	position: relative;
+	padding: 0;
+}
+
+.panel.lot-detail-panel img {
+	width: 100%;
+}
+
+.lot-detail-title {
+	color: white;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+	position: absolute;
+	top: 30px;
+	left: 50px;
+}
 
 
+.table tbody > tr > td.info-header {
+	padding: 10px;
+	background: #ecf9fe;
+}
 
 
+.idea-expanded-wrap {
+	margin: 20px 0;
+	border: 1px solid #ccc;
+	background: #fdfdfd;
+}
 
+.idea-expanded-img {
+	width: 130px;
+	float: left;
+	padding: 10px;
 
+}
 
+.idea-expanded-content {
+	width: 270px;
+	float: left;
+	padding: 10px;
+	font-size: 12px; 
+}
+
+.clear {
+	clear: both;
+}
+
+.expand {
+	font-weight: bold;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 12px;
+}
 
 
 
