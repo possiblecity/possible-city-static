@@ -1,3 +1,30 @@
+
+.expanded-ideas-project h3 {
+	margin-top: 0px;
+}
+
+
+.exanded-idea-floated-by img {
+	width:50px;
+	height:50px;
+}
+
+.expanded-idea-project-page-header h1 {
+	margin-top: 5px;
+}
+
+.expanded-idea-project-page-header h4 {
+	color: gray;
+	margin-bottom: 5px;
+}
+
+.comments img {
+	width: 50px;
+	height: 50px;
+
+}
+
+
 /***************************************************************************/
 /* GENERAL STYLES */
 
