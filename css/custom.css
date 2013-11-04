@@ -1243,6 +1243,30 @@ p.lead-big {
 
 
 
+
+/***************************************************************************/
+/* PROJECT PAGE  */
+.lot-image {
+	display: block;
+	margin-bottom: 10px;
+}
+
+
+.top-right-btn {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	z-index: 1000;
+}
+
+.people-section {
+	position: relative;
+}
+
+.idea-section {
+	position: relative;
+}
+
 /***************************************************************************/
 /******************************************************* RESPONSIVE STYLES */
 
