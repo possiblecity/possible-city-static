@@ -1,0 +1,527 @@
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <title>Possible City | Lot 1920 N Uber St </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="http://possiblecity.co/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="http://possiblecity.co/static/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="http://possiblecity.co/static/css/animation.css" rel="stylesheet">
+  <link href="http://possiblecity.co/static/css/custom.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic' rel='stylesheet' type='text/css'>
+  <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+  <script src="/static/js/vendor/html5shiv.js"></script>
+  <![endif]-->
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" /><![endif]-->
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+  <style>
+    .idea-photo::-webkit-input-placeholder {
+      color: rgba(255,255,255, 0.9);
+    }
+  </style>
+</head>
+<body class="lotxlot" id="">
+  <nav class="navbar">
+   <div class="container">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+     </button>  
+     <a class="navbar-brand" href="/">Possible City</a>
+     <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="nav-map"><a href="/lots/">Lots</a></li>
+        <li class="nav-ideas"><a href="/ideas/explore/">Ideas</a></li>
+        <li class="nav-people"><a href="/people/">People</a></li>
+        <li class="nav-people"><a href="/people/">Projects</a></li>
+      </ul>
+      <ul class="nav navbar-nav pull-right mobile-account-bar-dropdown">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle signed-in" data-toggle="dropdown">
+            <img width="30px" src="http://possiblecity.co/media/images/profiles/dmeehan.jpg" />
+            Douglas Meehan
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="/people/profile/dmeehan/">My Profile</a></li>
+            <li><a href="/people/update/">Edit Profile</a></li>
+            <li class="divider"></li>
+            <li><a href="/admin/">Admin</a></li>
+            <li><a href="/account/settings/">Settings</a></li>
+            <li>
+              <a data-toggle="modal" data-target="#logout-modal" href="#logout">
+                Log out
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="map" style="position: relative; width: 100%; height: 200px;"></div>
+<div class="container" style="position:relative; z-index: 100; margin-top: -15px;">
+  <div class="panel" style="background-color: rgba(255,255,255,0.7);">
+    <header class="lot-header row" style="height:70px;">
+      <div class="col-md-12">
+        <h1 style="margin:0;">
+          <a href="#">
+            <small style="padding:6px 9px" class="icon-double-angle-down icon-border"></small></a>
+            Lot #634581 - 1920 N Uber St
+          </h1>
+        </div>
+        
+      </header>
+      <section class="lot-info row">
+        <div class="col-lg-6">
+          <div style="position: relative">
+            <img src="http://maps.googleapis.com/maps/api/streetview?size=800x400&location=39.9833789632,-75.1660598196&sensor=false&fov=105">
+            
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <ul class="nav nav-pills margin-bottom-20">
+            <li class="active"><a href="#">Vacancy</a></li>
+            <li><a href="#">Ownership</a></li>
+            <li><a href="#">Spatial</a></li>
+            <li><a href="#">Political</a></li>
+            <li><a href="#">Financial</a></li>
+            <li><a href="#">Environmental</a></li>
+          </ul>
+          <table class="table">
+            <tbody>
+              <tr>
+                <th>Listed For Sale By City:</th>
+                <td>
+                  <i style="color:green" class="icon-ok-sign"></i>
+                  &nbsp;&nbsp;
+                  <a href="http://secure.phila.gov/PAPLPublicWeb/AddAsset.aspx?AssetID=5925">
+                    $18,166.00
+                  </a>
+                  <a href="#" class="btn btn-default btn-xs pull-right">Inquire for Purchase</a>
+                </td>
+              </tr>
+              <tr>
+                <th>Vacancy Violation:</th>
+                <td>
+                 <i style="color:red" class="icon-minus-sign"></i> &nbsp;&nbsp;None
+               </td>
+             </tr>
+             <tr>
+              <th>Violation Non-Compliance:</th>
+              <td>
+                <i style="color:red" class="icon-minus-sign"></i>
+                &nbsp;&nbsp;Not Applicable 
+              </td>
+            </tr>
+            <tr>
+              <th>Vacancy License:</th>
+              <td>
+               <i style="color:red" class="icon-minus-sign"></i> &nbsp;&nbsp;None
+             </td>
+           </tr>
+           <tr>
+            <th>Land Use:</th>
+            <td>
+             <i style="color:green" class="icon-ok-sign"></i>
+             &nbsp;&nbsp;Vacant Parcels</td>
+           </tr>
+           <tr>
+            <th>Building Description:</th>
+            <td>
+              <i style="color:green" class="icon-ok-sign"></i>
+              &nbsp;&nbsp;Vac Land Res &lt; Acre (SR)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <hr>
+    <section class="actions row">
+      <div class="col-lg-6">
+          <h2>Ideas <small>9</small></h2>
+          <ul class="list-group">
+             <li class="list-group-item">
+              <div class="media-body">
+                    <textarea class="form-control" placeholder="Summarize your idea for this lot. You can add a detailed description after" rows="2" style="margin-bottom:10px" ></textarea>
+
+                    <a href="#" class="btn btn-primary btn pull-right">Add Idea</a>
+      
+                    
+              </div>
+            </li>
+            <li class="list-group-item">
+             <div class="media"> 
+                <a class="pull-left profile-img" href="/people/profile/carybeta/">
+                   <img width="128" src="http://possiblecity.co/media/images/ideas/134/plot-combo.jpg.800x800_q85.jpg">
+                </a>
+                  <a href="#"<h4>POP-UP Playhouse</h4></a>
+                  <p>A prototype for play to reactivate abandoned sites as places to learn and interact with the architecture of the city.</p>
+                  <h6><a href="#">Cary Betagola</a> Via Web
+                                      <i class="icon-globe"></i>
+                                      &nbsp;•&nbsp; 1 day ago
+                                      &nbsp;•&nbsp; <span class="phileo">
+                                      <a class="ajax"
+                                      data-method="post"
+                                      data-replace-closest=".phileo"
+                                      data-spinner="off"
+                                      href="/likes/like/16:140/">
+                                      Like
+                                    </a>
+                                    &nbsp;•&nbsp;
+                                    <i class="icon-heart-empty"></i>
+                                    <span class="count">
+                                     0
+                                   </span>
+                                 </span>
+                               </h6>
+                    
+                    
+                </div>
+            </li>
+            <li class="list-group-item">
+             <div class="media"> 
+                <a class="pull-left profile-img" href="/people/profile/carybeta/">
+                   <img width="128" height="128" src="http://possiblecity.co/media/images/ideas/127/UberSt_Charrette_01.jpg.800x800_q85.jpg">
+                </a>
+                  <h4>Tire Swales</h4>
+                  <p>A prototype for play to reactivate abandoned sites as places to learn and interact with the architecture of the city.</p>
+                  <h6><a href="#">Cary Betagola</a> Via Web
+                                      <i class="icon-globe"></i>
+                                      &nbsp;•&nbsp; 1 day ago
+                                      &nbsp;•&nbsp; <span class="phileo">
+                                      <a class="ajax"
+                                      data-method="post"
+                                      data-replace-closest=".phileo"
+                                      data-spinner="off"
+                                      href="/likes/like/16:140/">
+                                      Like
+                                    </a>
+                                    &nbsp;•&nbsp;
+                                    <i class="icon-heart-empty"></i>
+                                    <span class="count">
+                                     0
+                                   </span>
+                                 </span>
+                               </h6>
+                    
+                </div>
+            </li>
+            <li class="list-group-item">
+             <div class="media"> 
+                <a class="pull-left profile-img" href="/people/profile/carybeta/">
+                   <img src="http://maps.googleapis.com/maps/api/streetview?size=128x128&location=39.9833789632,-75.1660598196&sensor=false&fov=105">
+                </a>
+                  <p>This should be a temporary outdoor children's library.</p>
+                  <h6><a href="#">Cary Betagola</a> Via Web
+                                      <i class="icon-globe"></i>
+                                      &nbsp;•&nbsp; 1 day ago
+                                      &nbsp;•&nbsp; <span class="phileo">
+                                      <a class="ajax"
+                                      data-method="post"
+                                      data-replace-closest=".phileo"
+                                      data-spinner="off"
+                                      href="/likes/like/16:140/">
+                                      Like
+                                    </a>
+                                    &nbsp;•&nbsp;
+                                    <i class="icon-heart-empty"></i>
+                                    <span class="count">
+                                     0
+                                   </span>
+                                 </span>
+                               </h6>
+                    <a href="#" class="btn btn-xs btn-default">Add More Details</a>
+                </div>
+            </li>
+             <li class="list-group-item">
+             <div class="media"> 
+                <a class="pull-left profile-img" href="/people/profile/carybeta/">
+                   <img src="http://maps.googleapis.com/maps/api/streetview?size=128x128&location=39.9833789632,-75.1660598196&sensor=false&fov=105">
+                </a>
+                  <p>I would like to see this well maintained lot used as an outdoor movie and performance theatre to bring positive nightlife back to the ave.</p>
+                  <h6><a href="#">Cary Betagola</a> Via Web
+                                      <i class="icon-globe"></i>
+                                      &nbsp;•&nbsp; 1 day ago
+                                      &nbsp;•&nbsp; <span class="phileo">
+                                      <a class="ajax"
+                                      data-method="post"
+                                      data-replace-closest=".phileo"
+                                      data-spinner="off"
+                                      href="/likes/like/16:140/">
+                                      Like
+                                    </a>
+                                    &nbsp;•&nbsp;
+                                    <i class="icon-heart-empty"></i>
+                                    <span class="count">
+                                     0
+                                   </span>
+                                 </span>
+                               </h6>
+                    <a href="#" class="btn btn-xs btn-default">Add More Details</a>
+                </div>
+            </li>
+          </ul>
+          <h2>Projects <small>0</small></h2>
+        <p>Ongoing activity to generate a new use for this lot.</p>
+        <p>
+          <a href="#" class="btn btn-lg btn-default">+ Start a Project</a></p>
+        </div>
+        <div class="col-lg-6">
+          <h2>People <small>34</small></h2>
+          <ul class="list-group">
+            <li class="list-group-item">
+               <div class="row">
+                <h5 style="padding-left:15px">Lot Keeper</h5>
+                <div class="col-lg-2">
+                  
+                  <img class="media-object"  
+                  src="http://possiblecity.co/static/img/profiles/doug_filter.jpg"
+                  alt="jbroglie" 
+                  />
+                </div>
+                <div class="col-lg-5">
+                  
+                  <p>Douglas Meehan <br><a href="mailto:doug@possiblecity.co">doug@possiblecity.co</a></p>
+                  
+                  
+                </div>
+
+                <div class="col-lg-5">
+                  
+                  <p>Lot Keeper since Aug 12th, 2013</p>
+                  
+                </div>
+                
+                  
+
+
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <h5 style="padding-left:15px">Followers</h5>
+                <div class="col-lg-2">
+                  <img class="media-object"  
+                  src="img/profiles/danielle.jpg"
+                  alt="jbroglie" 
+                  />
+                </div>
+                <div class="col-lg-2">
+                  <img class="media-object"  
+                  src="img/profiles/ben.jpg"
+                  alt="jbroglie" 
+                  />
+                </div>
+                <div class="col-lg-2">
+                  <img class="media-object"  
+                  alt="carybeta" 
+                  src="http://possiblecity.co/media/images/profiles/JamesCBonney_facebook.jpg" 
+                  width="64"
+                  />
+                </div>
+                <div class="col-lg-2">
+                  <img class="media-object"  
+                  alt="carybeta" 
+                  src="http://possiblecity.co/media/images/profiles/cary.png.400x400_q85_crop.jpg" 
+                  width="64"
+                  />
+                </div>
+                 <div class="col-lg-" >
+                    <a href="#" class="btn btn-default">+ FOLLOW THIS LOT</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <h2>Field Notes <small>23</small></h2>
+          <p>User submitted infomation about this lot.</p>
+          <ul class="list-group">
+            <li class="list-group-item clearfix">
+              <div class="media">
+                <span class="pull-left profile-pic">
+                  <img class="media-object"  
+                  src="http://possiblecity.co/static/img/profiles/doug_filter.jpg"
+                  alt="jbroglie" 
+                  width="64"
+                  />
+                </span>
+                <div class="media-body">
+                  <form method="post" id="idea-form" action=".">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='bOHV1asfJ6p4vu8gXfWdxCj8CnwHcQQK' />
+                    <div class="form-group">
+                      <div class="controls  field-tagline">
+                        <textarea name="tagline" style="height: 66px" required id="id_tagline" rows="2" placeholder="Add a note about this lot" cols="40" class="form-control"></textarea>
+                      </div><!--- .controls -->
+                    </div><!--- .control-group -->
+                    <div class="form-actions">
+                      <a href="#" class="pull-left"><i class="icon-camera icon-large"></i></a>
+                      <button type="submit" class="btn btn-primary pull-right">Add a note</button>
+                    </div>
+                  </form> 
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="media"> 
+                <a class="pull-left profile-img" href="/people/profile/carybeta/">
+                  <img class="media-object"  
+                  alt="carybeta" 
+                  src="http://possiblecity.co/media/images/profiles/cary.png.400x400_q85_crop.jpg" 
+                  width="64"
+                  />
+                </a>
+
+                <div class="media-body">
+                  <h4>
+                    Cary Betagole
+                  </h4>
+                  <p>Lot cleanup scheduled here weekend of Nov. 2-3. </p>
+                  <h6>Via Web
+                    <i class="icon-globe"></i>
+                    &nbsp;•&nbsp; 1 day ago
+                    &nbsp;•&nbsp; <a href="#" class="">Comment</a>
+                  </h6>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="media">
+                <a class="pull-left profile-img" href="/people/profile/carybeta/">
+                  <img class="media-object"  
+                  alt="carybeta" 
+                  src="http://possiblecity.co/media/images/profiles/JamesCBonney_facebook.jpg" 
+                  width="64"
+                  />
+                </a>
+                <div class="media-body">
+                  <h4>James Bonney</h4>
+                  <p>This lot looks to be reclaimed by the homeowners next door. We should get input from them to see how we can help them to improve the lot.</p>
+                  <h6>Via Web
+                    <i class="icon-globe"></i>
+                    &nbsp;•&nbsp; 1 day ago
+                  </span>
+                </h6>
+                <hr>
+                <div class="media">
+                  <a class="pull-left profile-img" href="/people/profile/carybeta/">
+                    <img class="media-object"  
+                    alt="carybeta" 
+                    src="http://possiblecity.co/media/images/profiles/cary.png.400x400_q85_crop.jpg" 
+                    width="32"
+                    />
+                  </a>
+                  <div class="media-body">
+                    <p><strong>Cary Betagole</strong> Great idea, we're planning a charrette at GBCDC. Let's all do outreach to these neighbors.</p>
+                    <h6>Via Web
+                      <i class="icon-globe"></i>
+                      &nbsp;•&nbsp; 1 day ago
+                    </h6>
+                  </div>
+                </div>
+                <div class="media">
+                  <span class="pull-left profile-pic">
+                    <img 
+                    src="http://possiblecity.co/static/img/profiles/doug_filter.jpg"
+                    alt="jbroglie" 
+                    width="32px"
+                    />
+                  </span>
+                  <div class="media-body">
+                    <form method="post" action=".">
+                      <input type='hidden' name='csrfmiddlewaretoken' value='bOHV1asfJ6p4vu8gXfWdxCj8CnwHcQQK' />
+                      <div class="form-group">
+                        <div class="controls  field-tagline">
+                          <textarea name="tagline" required id="id_tagline" rows="1" placeholder="Write a comment" class="form-control"></textarea>
+                        </div><!--- .controls -->
+                      </div><!--- .control-group -->
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>   
+<div class="clearfix"></div>
+<footer class="container">
+  <p>&copy; Possible City 2013 
+    <span class="pull-right">
+      <a href="mailto:info@possiblecity.co">info@possiblecity.co</a>&nbsp;|&nbsp; 
+      <a href="http://twitter.com/possiblecity"><i class="icon-twitter"></i></a>&nbsp;|&nbsp;
+      <a href="http://www.facebook.com/pages/Possible-City/302569273127610"><i class="icon-facebook"></i></a>
+    </span>
+  </p>
+</footer>
+<script> 
+  var philadelphia = new L.LatLng(39.9522, -75.1642); 
+  var southWest = new L.LatLng(39.87, -75.28);
+  var northEast = new L.LatLng(40.14, -74.96); 
+
+  var phlBounds = new L.LatLngBounds(southWest, northEast);
+
+      // Initialize the map object 
+      var map = L.map('map', { 
+        maxZoom: 22, 
+        minZoom: 10, 
+        maxBounds: phlBounds, 
+        center: philadelphia,
+        attributionControl: false
+      }); 
+
+      // Prep the background tile layer 
+
+      //var tileUrl = 'http://api.tiles.mapbox.com/v3/dmeehan.map-sued82zn/{z}/{x}/{y}.png';
+
+      // Light map theme:
+      var tileUrl = 'http://api.tiles.mapbox.com/v3/dmeehan.map-t3op9nm9/{z}/{x}/{y}.png';
+
+
+      var tileAttribution = 'Data &copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a>; contributors, Design &copy; MapBox'; 
+
+      var streets = L.tileLayer(tileUrl, { attribution: tileAttribution, }).addTo(map);
+
+
+      var center = new L.LatLng(39.9833789632, -75.1660598196);
+      map.setView(center, 17);
+
+      L.marker(center).addTo(map); 
+
+
+    </script>
+
+
+
+    <div class="modal fade" id="logout-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-body">
+
+            <form method="POST" action="/account/logout/" class="form-horizontal">
+              <legend>Log out</legend>
+              <fieldset class="margin-bottom-20">
+                <input type='hidden' name='csrfmiddlewaretoken' value='mY8nLqg2a3DhzDHcmw3f2ekQN7uEdRE4' />
+                <p>Are you sure you want to log out?</p>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary">Log out</button>
+                </div>
+              </fieldset>
+            </form>
+
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+  </body>
+  </html>
