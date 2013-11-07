@@ -41,18 +41,15 @@ input, textarea{
     
 }
 
-::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #ffffff;
+.notes-tab {
+	font-weight: bold;
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #ffffff;
+
+.actions h2 {
+	margin-top: 0px;
 }
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #ffffff;
-}
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    #ffffff;
-}
+
+
 
 
 
@@ -206,6 +203,11 @@ form p {
 
 .margin-top-30 {
 	margin-top: 30px;	
+}
+
+.start-project-btn {
+	margin-top: -7px;
+
 }
 
 
@@ -1221,6 +1223,13 @@ p.lead-big {
 	padding: 10px;
 
 }
+
+.idea-expanded-description {
+	border: 1px solid #ccc;
+	background-color: yellow;
+
+}
+
 
 .idea-expanded-content {
 	width: 270px;
