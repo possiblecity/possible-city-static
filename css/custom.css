@@ -49,7 +49,113 @@ input, textarea{
 	margin-top: 0px;
 }
 
+.homepage-have-an-idea h1 {
+	font-size: 63px;
+	margin-bottom: 25px;
+}
 
+.homepage-have-an-idea button {
+	display: inline;
+}
+
+.homepage-have-an-idea p {
+	display: inline;
+	font-size: 20px;
+	margin-right: 10px;
+	margin-top: 10px;
+	text-decoration: underline;
+}
+
+.homepage-have-an-idea form {
+	margin-bottom: 15px;
+}
+
+.homepage-have-an-idea .btn {
+	font-size: 30px;
+}
+
+.homepage-add-more-details-button {
+	background-color: #B1ACAC;
+	border: #DBDBDB;
+	color: #fff;
+}
+
+.homepage-add-more-details-button:hover {
+	background-color: #C0C0C0;
+	color: #fff;
+}
+
+.lot-detail-page-container {
+	position:relative; 
+	z-index: 100; 
+	margin-top: -60px;
+}
+
+.lot-detail-page-container h1 {
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+button.close {
+color: #3A3A3A;
+}
+
+.icon-angle-down {
+	padding-right: 10px;
+	font-size: 24px;
+	padding-top: 5px;
+	color: #868686;
+
+}
+
+button.close-lot-detail {
+	padding-top: 4px;
+	padding-right: 10px;
+}
+
+.follow-project-btn {
+
+}
+
+.follow-this-lot-btn {
+	margin-top: 10px;
+}
+
+.people img {
+		width: 60px;
+	}
+
+.people ul {
+	margin-left: 0px;
+	padding-left: 0px;
+	padding: 10px 15px;
+	margin-bottom: -1px;
+	border: 1px solid #dddddd;
+	border-radius: 3px;
+	}
+
+
+
+.people li {
+	display: inline;
+	list-style: none;
+	padding-right: 20px;
+
+}
+
+
+
+.people h5 {
+	margin-top: 0px;
+}
+
+.add-comment-button {
+	margin-top: 5px;
+}
+
+.form-group textarea {
+	width: 100%;
+}
 
 
 
@@ -206,8 +312,11 @@ form p {
 }
 
 .start-project-btn {
-	margin-top: -7px;
+	margin-top: -10px;
+}
 
+.projects-lot-detail-page {
+	margin-bottom: 40px;
 }
 
 
@@ -813,9 +922,7 @@ padding-left: 0px;
 	display: none;
 }
 
-.form-group {
-	max-width: 500px;
-}
+
 
 
 
@@ -1276,6 +1383,23 @@ p.lead-big {
 	position: relative;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /***************************************************************************/
 /******************************************************* RESPONSIVE STYLES */
 
@@ -1341,6 +1465,13 @@ p.lead-big {
 		display: none;
 	}
 
+
+	/***************************************************************************/
+	/* LOT DETAIL PAGE */
+	.lot-image-lot-detail-page {
+		margin-bottom: 20px;
+	}
+
 }
 
 
@@ -1365,9 +1496,7 @@ p.lead-big {
 		margin-bottom: 15px;
 	}
 
-	.form-group {
-		margin-bottom: 14px;
-	}
+	
 
 	.checkbox {
 		display: block;
@@ -1664,28 +1793,54 @@ p.lead-big {
 
 	.skills-2nd-row {
 	display: none;
-}
-
-
+	}
 
 	#sign-in-modal .modal-dialog {
 	width: 370px;
+	}
+
+	/***************************************************************************/
+	/* LOT DETAIL PAGE */
+
+	.lot-detail-page-container {
+		padding-left: 0px;
+		padding-right: 0px;
+
+	}
+
+	.lot-detail-page-container h1 {
+		font-size: 30px;
+		margin-bottom: 5px;
+
+	}
+
+	.lot-detail-page-container-icons {
+		height: 20px;
+		margin-top: -10px;
+		margin-bottom: 15px;
+	}
+
+
+
+
+	
+
 }
 
 
+@media (max-width: 450px) {
+	
+
+	.lot-detail-page-container h1 {
+		font-size: 20px;
+
+	}
+
+	
+
 
 }
 
-
-
-
-
-
-
-}
-
-
-  
 
 
 
